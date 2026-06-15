@@ -214,86 +214,20 @@ export default function AbhayJeevanHospital() {
         @keyframes pulseRed{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.4)}}
       `}</style>
 
-      {/* ══ NAVBAR ══ */}
-      <nav style={{
-        position: "fixed", top: 0, width: "100%", zIndex: 100,
-        background: scrolled ? "rgba(255,255,255,0.97)" : "rgba(255,255,255,0.98)",
-        backdropFilter: "blur(12px)",
-        borderBottom: "1px solid #DDE4EE",
-        boxShadow: scrolled ? "0 4px 24px rgba(0,0,0,0.07)" : "0 1px 6px rgba(0,0,0,0.04)",
-        transition: "box-shadow 0.3s",
-      }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 68 }}>
-
-          {/* Logo */}
-          <div style={{ display: "flex", alignItems: "center", gap: 11 }}>
-            <div style={{ width: 44, height: 44, background: "linear-gradient(135deg,#C0392B,#922B21)", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontSize: 20, fontWeight: 800, boxShadow: "0 4px 12px rgba(192,57,43,0.3)", flexShrink: 0 }}>✚</div>
-            <div>
-              <div style={{ fontFamily: "'Playfair Display',serif", fontSize: 18, fontWeight: 800, color: "#1A1A2E", lineHeight: 1.1 }}>Abhay Jeevan Hospital</div>
-              <div style={{ fontSize: 10, color: "#C0392B", letterSpacing: 2, fontWeight: 700 }}>24×7 EMERGENCY · MULTISPECIALTY</div>
-            </div>
-          </div>
-
-          {/* Desktop links */}
-          <div className="hide-mob" style={{ display: "flex", alignItems: "center", gap: 2 }}>
-            {NAV_LINKS.map(l => (
-              <button key={l} onClick={() => scrollTo(l)}
-                style={{ background: "none", border: "none", cursor: "pointer", padding: "8px 13px", fontSize: 13.5, fontWeight: 500, color: "#374151", borderRadius: 8, transition: "all 0.18s" }}
-                onMouseEnter={e => { e.currentTarget.style.color = "#C0392B"; e.currentTarget.style.background = "#FEF2F2"; }}
-                onMouseLeave={e => { e.currentTarget.style.color = "#374151"; e.currentTarget.style.background = "none"; }}>
-                {l}
-              </button>
-            ))}
-          </div>
-
-          {/* Emergency + CTA */}
-          <div className="hide-mob" style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <div style={{ background: "#FEF2F2", border: "1px solid #FCA5A5", borderRadius: 10, padding: "6px 14px", textAlign: "center" }}>
-              <div style={{ fontSize: 10, color: "#C0392B", fontWeight: 700, letterSpacing: 0.5 }}>EMERGENCY</div>
-              <div style={{ fontSize: 15, fontWeight: 800, color: "#C0392B" }}>📞 98765 43210</div>
-            </div>
-            <button onClick={() => scrollTo("Contact")}
-              style={{ background: "linear-gradient(135deg,#C0392B,#922B21)", color: "#fff", border: "none", borderRadius: 10, padding: "10px 20px", fontWeight: 700, fontSize: 13.5, cursor: "pointer", boxShadow: "0 4px 14px rgba(192,57,43,0.3)" }}>
-              Book Appointment
-            </button>
-          </div>
-
-          {/* Hamburger */}
-          <button className="show-mob" onClick={() => setMenuOpen(!menuOpen)}
-            style={{ background: "none", border: "none", cursor: "pointer", fontSize: 22, color: "#1A1A2E" }}>
-            {menuOpen ? "✕" : "☰"}
-          </button>
-        </div>
-
-        {/* Mobile menu */}
-        {menuOpen && (
-          <div style={{ background: "#fff", borderTop: "1px solid #DDE4EE", padding: "16px 24px" }}>
-            {NAV_LINKS.map(l => (
-              <button key={l} onClick={() => scrollTo(l)}
-                style={{ display: "block", width: "100%", textAlign: "left", background: "none", border: "none", color: "#374151", fontSize: 15, padding: "12px 0", cursor: "pointer", borderBottom: "1px solid #EBF0F8" }}>
-                {l}
-              </button>
-            ))}
-            <div style={{ marginTop: 16, background: "#FEF2F2", border: "1px solid #FCA5A5", borderRadius: 12, padding: 14 }}>
-              <div style={{ color: "#C0392B", fontSize: 11, fontWeight: 700 }}>24×7 Emergency</div>
-              <div style={{ color: "#C0392B", fontWeight: 800, fontSize: 20 }}>📞 98765 43210</div>
-            </div>
-          </div>
-        )}
-      </nav>
+    
 
       {/* ══ HERO ══ */}
-      <section style={{ background: "linear-gradient(135deg,#FEF2F2 0%,#EEF3FA 50%,#F4F7FB 100%)", minHeight: "100vh", paddingTop: 68, position: "relative", overflow: "hidden" }}>
-        {/* Subtle dot grid */}
+      {/* <section style={{ background: "linear-gradient(135deg,#FEF2F2 0%,#EEF3FA 50%,#F4F7FB 100%)", minHeight: "100vh", paddingTop: 68, position: "relative", overflow: "hidden" }}>
+        
         <div style={{ position: "absolute", inset: 0, backgroundImage: "radial-gradient(circle at 1px 1px,rgba(192,57,43,0.08) 1px,transparent 0)", backgroundSize: "40px 40px" }} />
-        {/* Soft blobs */}
+        
         <div style={{ position: "absolute", top: "15%", right: "5%", width: 360, height: 360, background: "rgba(192,57,43,0.06)", borderRadius: "50%", filter: "blur(70px)" }} />
         <div style={{ position: "absolute", bottom: "10%", left: "2%", width: 280, height: 280, background: "rgba(26,58,92,0.06)", borderRadius: "50%", filter: "blur(60px)" }} />
 
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "60px 24px 40px", position: "relative", zIndex: 2 }}>
           <div className="hero-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 48, alignItems: "center" }}>
 
-            {/* Left */}
+            
             <div>
               <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "#fff", border: "1px solid #FCA5A5", borderRadius: 100, padding: "7px 18px", marginBottom: 24, boxShadow: "0 2px 8px rgba(192,57,43,0.08)" }}>
                 <span style={{ width: 8, height: 8, background: "#C0392B", borderRadius: "50%", display: "inline-block", animation: "pulseRed 1.5s ease-in-out infinite" }} />
@@ -324,7 +258,7 @@ export default function AbhayJeevanHospital() {
                 </button>
               </div>
 
-              {/* Stats */}
+              
               <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 14 }}>
                 {STATS.map(s => (
                   <div key={s.label} style={{ background: "#fff", border: "1px solid #DDE4EE", borderRadius: 12, padding: "14px", textAlign: "center", boxShadow: "0 2px 8px rgba(0,0,0,0.04)" }}>
@@ -335,9 +269,9 @@ export default function AbhayJeevanHospital() {
               </div>
             </div>
 
-            {/* Right panel */}
+            
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-              {/* Hospital card */}
+            
               <div style={{ background: "#fff", border: "1px solid #DDE4EE", borderRadius: 20, padding: "28px", textAlign: "center", boxShadow: "0 8px 32px rgba(192,57,43,0.08)" }}>
                 <div style={{ fontSize: 68, marginBottom: 8 }}>🏥</div>
                 <div style={{ fontFamily: "'Playfair Display',serif", fontSize: 20, fontWeight: 700, color: "#1A1A2E" }}>Abhay Jeevan Hospital</div>
@@ -346,7 +280,7 @@ export default function AbhayJeevanHospital() {
                 <div style={{ color: "#C0392B", fontSize: 11.5, letterSpacing: 1.5, marginTop: 10, fontWeight: 700 }}>24×7 EMERGENCY · ICU · OPERATION THEATRE</div>
               </div>
 
-              {/* Doctor chips */}
+              
               {DOCTORS.slice(0, 2).map(d => (
                 <div key={d.name} style={{ background: "#fff", border: "1px solid #DDE4EE", borderRadius: 14, padding: "14px 18px", display: "flex", alignItems: "center", gap: 13, boxShadow: "0 2px 10px rgba(0,0,0,0.04)" }}>
                   <div style={{ width: 48, height: 48, borderRadius: "50%", background: `linear-gradient(135deg,${d.color},${d.color}99)`, display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontWeight: 800, fontSize: 13, fontFamily: "'Playfair Display',serif", flexShrink: 0 }}>{d.initial}</div>
@@ -362,11 +296,11 @@ export default function AbhayJeevanHospital() {
           </div>
         </div>
 
-        {/* Wave divider */}
+      
         <svg viewBox="0 0 1440 60" style={{ display: "block", marginBottom: -4, width: "100%" }}>
           <path d="M0,40 C400,80 1040,0 1440,40 L1440,60 L0,60 Z" fill="#ffffff" />
         </svg>
-      </section>
+      </section> */}
 
       {/* ══ WHY CHOOSE US ══ */}
       <section style={{ background: "#fff", padding: "80px 24px" }}>
@@ -714,71 +648,6 @@ export default function AbhayJeevanHospital() {
         </div>
       </section>
 
-      {/* ══ FOOTER ══ */}
-      <footer style={{ background: "#1A1A2E", borderTop: "4px solid #C0392B", padding: "50px 24px 24px" }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-          <div className="footer-grid" style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1.5fr", gap: 32, marginBottom: 40 }}>
-
-            <div>
-              <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 16 }}>
-                <div style={{ width: 40, height: 40, background: "linear-gradient(135deg,#C0392B,#922B21)", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontSize: 18, fontWeight: 800 }}>✚</div>
-                <div>
-                  <div style={{ fontFamily: "'Playfair Display',serif", color: "#F8FAFB", fontSize: 16, fontWeight: 700 }}>Abhay Jeevan Hospital</div>
-                  <div style={{ color: "#C0392B", fontSize: 10, letterSpacing: 1.5, fontWeight: 700 }}>RAEBARELI · UTTAR PRADESH</div>
-                </div>
-              </div>
-              <p style={{ color: "#64748B", fontSize: 13, lineHeight: 1.75, marginBottom: 16 }}>
-                Raebareli ka trusted multispecialty hospital jahan 15+ saalon se Dr. Anjali Singh aur Dr. Lal Ratnakar Singh ki expert team thousands of patients ki seva kar rahi hai.
-              </p>
-              <div style={{ color: "#C0392B", fontWeight: 800, fontSize: 18 }}>📞 98765 43210</div>
-              <div style={{ color: "#475569", fontSize: 12, marginTop: 4 }}>24×7 Emergency Available</div>
-            </div>
-
-            <div>
-              <h4 style={{ color: "#F8FAFB", fontWeight: 700, fontSize: 14, marginBottom: 16, borderBottom: "1px solid rgba(255,255,255,0.08)", paddingBottom: 10 }}>Quick Links</h4>
-              {NAV_LINKS.map(l => (
-                <button key={l} onClick={() => scrollTo(l)}
-                  style={{ display: "block", background: "none", border: "none", color: "#64748B", fontSize: 13, padding: "5px 0", cursor: "pointer", textAlign: "left", transition: "color 0.2s" }}
-                  onMouseEnter={e => e.target.style.color = "#C0392B"}
-                  onMouseLeave={e => e.target.style.color = "#64748B"}>{l}</button>
-              ))}
-            </div>
-
-            <div>
-              <h4 style={{ color: "#F8FAFB", fontWeight: 700, fontSize: 14, marginBottom: 16, borderBottom: "1px solid rgba(255,255,255,0.08)", paddingBottom: 10 }}>Services</h4>
-              {SERVICES.slice(0, 7).map(s => (
-                <div key={s.title} style={{ color: "#64748B", fontSize: 13, padding: "4px 0" }}>{s.title}</div>
-              ))}
-            </div>
-
-            <div>
-              <h4 style={{ color: "#F8FAFB", fontWeight: 700, fontSize: 14, marginBottom: 16, borderBottom: "1px solid rgba(255,255,255,0.08)", paddingBottom: 10 }}>OPD Timing</h4>
-              {[
-                { day: "Monday – Saturday", time: "9:00 AM – 2:00 PM" },
-                { day: "Monday – Saturday", time: "5:00 PM – 8:00 PM" },
-                { day: "Sunday", time: "Emergency Only" },
-              ].map((t, i) => (
-                <div key={i} style={{ marginBottom: 14 }}>
-                  <div style={{ color: "#64748B", fontSize: 11, fontWeight: 700 }}>{t.day}</div>
-                  <div style={{ color: "#C0392B", fontSize: 14, fontWeight: 700 }}>{t.time}</div>
-                </div>
-              ))}
-              <div style={{ background: "rgba(192,57,43,0.15)", border: "1px solid rgba(192,57,43,0.3)", borderRadius: 10, padding: "12px 14px", marginTop: 8 }}>
-                <div style={{ color: "#F87171", fontSize: 12, fontWeight: 700 }}>🚨 EMERGENCY</div>
-                <div style={{ color: "#C0392B", fontWeight: 800, fontSize: 16 }}>24 × 7 OPEN</div>
-              </div>
-            </div>
-          </div>
-
-          <div style={{ borderTop: "1px solid rgba(255,255,255,0.07)", paddingTop: 20, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 8 }}>
-            <span style={{ color: "#374151", fontSize: 13 }}>© 2024 Abhay Jeevan Hospital. All Rights Reserved.</span>
-            <span style={{ color: "#374151", fontSize: 13 }}>
-              Designed & Developed by{" "}
-              <span style={{ color: "#C0392B", fontWeight: 700 }}>Salfartech</span>
-            </span>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
