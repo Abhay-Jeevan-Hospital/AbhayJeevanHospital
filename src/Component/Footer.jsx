@@ -49,7 +49,7 @@ const Footer = () => {
             </p>
 
             <h4 className="text-cyan-500 font-bold text-xl">
-              📞 98765 43210
+              📞 +91 93353 99454
             </h4>
 
             <p className="text-slate-500 text-sm mt-1">

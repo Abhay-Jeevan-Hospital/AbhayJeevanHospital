@@ -211,7 +211,7 @@ export default function AbhayJeevanGallery() {
           style={{ background: "radial-gradient(circle, #0891B2, transparent)" }}
         />
 
-        <div className="max-w-7xl mx-auto bg-blue-950 text-center relative z-10">
+        <div className="max-w-7xl mx-auto bg-blue-950 rounded-2xl text-center relative z-10">
           {/* Eyebrow tag */}
           <div className="inline-flex items-center gap-2 mb-6">
             <div className="w-8 h-px bg-cyan-500" />

@@ -61,7 +61,16 @@ const doctors = [
   },
 ];
 
-const CARD_WIDTH = 320;
+
+// const CARD_WIDTH = 320;
+const CARD_WIDTH = typeof window !== "undefined"
+  ? window.innerWidth < 640
+    ? 260
+    : window.innerWidth < 1024
+      ? 290
+      : 320
+  : 320;
+
 const CARD_GAP = 32;
 const VISIBLE = 3;
 
@@ -113,7 +122,8 @@ export default function Consultant() {
     const absD = Math.abs(wrappedDiff);
     const sign = Math.sign(wrappedDiff);
 
-    const translateX = wrappedDiff * (CARD_WIDTH * 0.7 + CARD_GAP);
+    const translateX = wrappedDiff *
+      ((window.innerWidth < 640 ? CARD_WIDTH * 0.45 : CARD_WIDTH * 0.7) + CARD_GAP);
     const translateZ = absD === 0 ? 0 : absD === 1 ? -120 : -280;
     const rotateY = sign * (absD === 0 ? 0 : absD === 1 ? 22 : 40);
     const scale = absD === 0 ? 1 : absD === 1 ? 0.85 : 0.7;
@@ -136,128 +146,138 @@ export default function Consultant() {
 
   return (
     <>
-    {/* <Breadcrumb/> */}
-    <div
-      className="min-h-screen bg-gray-50 flex flex-col mt-20 items-center justify-center py-16 px-4"
-      style={{ fontFamily: "'Segoe UI', system-ui, sans-serif" }}
+      {/* <Breadcrumb/> */}
+      <div
+        className="min-h-screen bg-blue-950 flex flex-col mt-12 md:mt-20 items-center justify-center py-10 md:py-16 px-3 sm:px-4 overflow-hidden"
+        style={{ fontFamily: "'Segoe UI', system-ui, sans-serif" }}
       >
-      {/* Header */}
-      <div className="text-center mb-12">
-        <span className="inline-block bg-red-100 text-blue-950 text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4">
-          Our Medical Team
-        </span>
-        <h2 className="text-4xl font-bold text-cyan-500 mb-2">
-          Meet Our <span className="text-blue-950">Specialists</span>
-        </h2>
-        <p className="text-gray-500 text-base max-w-md mx-auto">
-          Dedicated doctors with decades of experience, committed to your health
-          and well-being.
-        </p>
-      </div>
+        {/* Header */}
+        <div className="text-center mb-12">
+          <span className="inline-block bg-cyan-100 text-blue-950 text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4">
+            Our Medical Team
+          </span>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-cyan-500 mb-2">
+            Meet Our <span className="text-white">Specialists</span>
+          </h2>
+          <p className="text-gray-50 text-sm sm:text-base max-w-md mx-auto px-2">
+            Dedicated doctors with decades of experience, committed to your health
+            and well-being.
+          </p>
+        </div>
 
-      {/* 3D Slider Stage */}
-      <div
-        className="relative w-full flex items-center justify-center"
-        style={{ height: 460, perspective: "1200px" }}
-        onMouseDown={onDragStart}
-        onMouseUp={onDragEnd}
-        onTouchStart={onDragStart}
-        onTouchEnd={onDragEnd}
-        >
+        {/* 3D Slider Stage */}
         <div
-          className="relative"
-          style={{ width: CARD_WIDTH, height: 420, transformStyle: "preserve-3d" }}
-          >
-          {doctors.map((doc, i) => (
-              <div
-              key={doc.id}
-              className="absolute top-0 left-0"
-              style={{ width: CARD_WIDTH, ...getCardStyle(i) }}
-              onClick={() => { if (i !== active) { setActive(i); resetAuto(); } }}
-              onMouseEnter={() => setHovered(i)}
-              onMouseLeave={() => setHovered(null)}
-              >
-              <DoctorCard doc={doc} isActive={i === active} hovered={hovered === i} />
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Active doctor quick info bar */}
-      <div
-        className="mt-6 flex items-center gap-3 bg-white rounded-2xl shadow-md px-6 py-3 border border-gray-100"
-        style={{ transition: "all 0.4s" }}
+          className="relative w-full flex items-center justify-center overflow-hidden"
+          style={{
+            height: window.innerWidth < 640 ? 380 : 460,
+            perspective: "1200px",
+          }}
+          onMouseDown={onDragStart}
+          onMouseUp={onDragEnd}
+          onTouchStart={onDragStart}
+          onTouchEnd={onDragEnd}
         >
-        <span className="text-2xl"><img src={doc.emoji} className="w-16 rounded-full" alt="" /></span>
-        <div>
-          <p className="text-sm font-semibold text-gray-800">{doc.name}</p>
-          <p className="text-xs text-gray-400">{doc.timing}</p>
+          <div
+            className="relative"
+            style={{
+              width: CARD_WIDTH,
+              height: window.innerWidth < 640 ? 350 : 420,
+              transformStyle: "preserve-3d",
+            }}
+          >
+            {doctors.map((doc, i) => (
+              <div
+                key={doc.id}
+                className="absolute top-0 left-0"
+                style={{ width: CARD_WIDTH, ...getCardStyle(i) }}
+                onClick={() => { if (i !== active) { setActive(i); resetAuto(); } }}
+                onMouseEnter={() => setHovered(i)}
+                onMouseLeave={() => setHovered(null)}
+              >
+                <DoctorCard doc={doc} isActive={i === active} hovered={hovered === i} />
+              </div>
+            ))}
+          </div>
         </div>
-        <a
-          href="#"
-          className="ml-4 bg-cyan-500 hover:bg-blue-blue-950 text-white text-xs font-semibold px-4 py-2 rounded-xl transition-colors"
-          >
-          Book OPD
-        </a>
-      </div>
 
-      {/* Navigation */}
-      <div className="flex items-center gap-6 mt-8">
-        <button
-          onClick={handlePrev}
-          className="w-11 h-11 rounded-full bg-white border border-gray-200 shadow hover:shadow-md flex items-center justify-center text-gray-600 hover:text-blue-950 hover:border-red-300 transition-all"
+        {/* Active doctor quick info bar */}
+        <div
+          className="mt-6 flex flex-col sm:flex-row items-center gap-3 bg-white rounded-2xl shadow-md px-4 sm:px-6 py-3 border border-gray-100 w-full max-w-md"
+          style={{ transition: "all 0.4s" }}
+        >
+          <span className="text-2xl"><img src={doc.emoji}
+            className="w-12 h-12 sm:w-16 sm:h-16 rounded-full object-cover"
+            alt="" /></span>
+          <div>
+            <p className="text-sm font-semibold text-gray-800">{doc.name}</p>
+            <p className="text-xs text-gray-400">{doc.timing}</p>
+          </div>
+          <a
+            href="#"
+            className="ml-4 bg-cyan-500 hover:bg-blue-blue-950 text-white text-xs font-semibold px-4 py-2 rounded-xl transition-colors"
           >
-          <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
-            <path d="M15 19l-7-7 7-7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        </button>
+            Book OPD
+          </a>
+        </div>
 
-        {/* Dots */}
-        <div className="flex gap-2">
-          {doctors.map((_, i) => (
+        {/* Navigation */}
+        <div className="flex items-center gap-6 mt-8">
+          <button
+            onClick={handlePrev}
+            className="w-11 h-11 rounded-full bg-white border border-gray-200 shadow hover:shadow-md flex items-center justify-center text-gray-600 hover:text-blue-950 hover:border-red-300 transition-all"
+          >
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
+              <path d="M15 19l-7-7 7-7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+
+          {/* Dots */}
+          <div className="flex gap-2">
+            {doctors.map((_, i) => (
               <button
-              key={i}
-              onClick={() => { setActive(i); resetAuto(); }}
-              className="rounded-full transition-all duration-300"
-              style={{
+                key={i}
+                onClick={() => { setActive(i); resetAuto(); }}
+                className="rounded-full transition-all duration-300"
+                style={{
                   width: i === active ? 28 : 8,
                   height: 8,
                   background: i === active ? "#dc2621" : "#d1d5db",
                 }}
-                />
+              />
             ))}
+          </div>
+
+          <button
+            onClick={handleNext}
+            className="w-11 h-11 rounded-full bg-white border border-gray-200 shadow hover:shadow-md flex items-center justify-center text-gray-600 hover:text-red-600 hover:border-red-300 transition-all"
+          >
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
+              <path d="M9 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
         </div>
 
-        <button
-          onClick={handleNext}
-          className="w-11 h-11 rounded-full bg-white border border-gray-200 shadow hover:shadow-md flex items-center justify-center text-gray-600 hover:text-red-600 hover:border-red-300 transition-all"
-          >
-          <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
-            <path d="M9 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        </button>
-      </div>
-
-      {/* Footer credit */}
-      {/* <p className="mt-10 text-xs text-gray-400">
+        {/* Footer credit */}
+        {/* <p className="mt-10 text-xs text-gray-400">
         Powered by <span className="font-semibold text-red-600">Salfartech</span>
         </p> */}
-    </div>
-</>
+      </div>
+    </>
   );
 }
 
 function DoctorCard({ doc, isActive, hovered }) {
-    return (
-        <div
-        className="relative rounded-3xl overflow-hidden select-none"
-        style={{
-            width: 320,
-            height: 420,
-            background: "white",
-            boxShadow: isActive
-            ? "0 32px 80px rgba(0,0,0,0.18), 0 4px 24px rgba(0,0,0,0.1)"
-            : "0 8px 32px rgba(0,0,0,0.08)",
+  return (
+    <div
+      className="relative rounded-3xl overflow-hidden select-none"
+      style={{
+        width: "100%",
+        maxWidth: window.innerWidth < 640 ? 260 : 320,
+        height: window.innerWidth < 640 ? 350 : 420,
+        background: "white",
+        boxShadow: isActive
+          ? "0 32px 80px rgba(0,0,0,0.18), 0 4px 24px rgba(0,0,0,0.1)"
+          : "0 8px 32px rgba(0,0,0,0.08)",
         border: isActive ? `2px solid ${doc.color}22` : "2px solid #f3f4f6",
         transform: hovered && isActive ? "translateY(-6px)" : "none",
         transition: "transform 0.3s ease, box-shadow 0.3s ease",
@@ -299,11 +319,11 @@ function DoctorCard({ doc, isActive, hovered }) {
         <img src={doc.emoji}
           className="absolute flex items-center justify-center"
           style={{
-            bottom: -36,
+            bottom: window.innerWidth < 640 ? -28 : -36,
             left: "50%",
             transform: "translateX(-50%)",
-            width: 96,
-            height: 96,
+            width: window.innerWidth < 640 ? 72 : 96,
+            height: window.innerWidth < 640 ? 72 : 96,
             borderRadius: "50%",
             background: "white",
             border: `3px solid ${doc.color}`,
@@ -311,7 +331,7 @@ function DoctorCard({ doc, isActive, hovered }) {
             boxShadow: `0 4px 20px ${doc.color}40`,
           }}
         />
-        
+
 
         {/* Experience badge */}
         <div
@@ -323,13 +343,13 @@ function DoctorCard({ doc, isActive, hovered }) {
       </div>
 
       {/* Card body */}
-      <div className="pt-12 pb-5 px-6 text-center">
+      <div className="text-base sm:text-lg font-bold">
         <p className="text-xs font-semibold tracking-widest uppercase mb-1" style={{ color: doc.color }}>
           {doc.tagline}
         </p>
         <h3 className="text-lg font-bold text-gray-900 mb-0.5">{doc.name}</h3>
-        <p className="text-sm font-semibold text-gray-600 mb-1">{doc.specialty}</p>
-        <p className="text-xs text-gray-400 mb-4">{doc.qualification}</p>
+        <p className="text-xs sm:text-sm font-semiboldd text-gray-600 mb-1">{doc.specialty}</p>
+        <p className="text-xs sm:text-sm font-semibold">{doc.qualification}</p>
 
         {/* Divider */}
         <div className="h-px bg-gray-100 mb-4" />

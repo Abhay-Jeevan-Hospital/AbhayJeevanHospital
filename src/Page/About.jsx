@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import AHOutA from  '../assets/gallery/AHOutA.jpeg'
 
 /* ─── DATA ─── */
 const stats = [
@@ -12,29 +13,29 @@ const stats = [
 
 const timeline = [
   {
-    year: "1999",
+    year: "1 September 2024",
     title: "Foundation",
-    desc: "Abhay Jeevan Hospital was established in Bhopal with a 30-bed facility and a commitment to affordable healthcare.",
+    desc: "Abhay Jeevan Hospital was established in Bhopal with a vision to provide affordable, accessible, and patient-centered healthcare to the community.",
   },
   {
-    year: "2005",
-    title: "First Expansion",
-    desc: "Added ICU, Operation Theatre, and advanced diagnostic services. Capacity expanded to 100 beds.",
+    year: "2024",
+    title: "Patient Care Begins",
+    desc: "Started 24×7 emergency services, outpatient consultations, and essential healthcare facilities to serve patients with compassion and efficiency.",
   },
   {
-    year: "2010",
-    title: "NABH Accreditation",
-    desc: "Received National Accreditation Board for Hospitals certification — a landmark in quality care.",
+    year: ".....",
+    title: "Enhanced Healthcare Infrastructure",
+    desc: "Introduced modern operation theatres, advanced diagnostic support, and improved patient care facilities to ensure better treatment outcomes.",
   },
   {
-    year: "2015",
-    title: "Super Specialty Wing",
-    desc: "Launched Cardiology, Neurology, and Oncology departments with state-of-the-art equipment.",
+    year: ".....",
+    title: "Expert Medical Team",
+    desc: "Expanded services with experienced specialists in Gynecology, General Medicine, Surgery, and other key healthcare departments.",
   },
   {
-    year: "2020",
-    title: "Digital Healthcare",
-    desc: "Introduced telemedicine, digital OPD, and a hospital management system to modernize patient care.",
+    year: ".....",
+    title: "Serving the Community",
+    desc: "Continuing our commitment to quality healthcare through modern technology, skilled doctors, and a patient-first approach.",
   },
   {
     year: "2024",
@@ -240,7 +241,7 @@ export default function About() {
                 style={{ border: "1px solid rgba(6,182,212,0.2)" }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=800&q=80"
+                  src={AHOutA}
                   alt="Abhay Jeevan Hospital Building"
                   className="w-full h-80 md:h-96 object-cover"
                 />
@@ -376,12 +377,12 @@ export default function About() {
           <Reveal className="text-center mb-14">
             <SectionLabel text="Our Journey" />
             <h2 className="text-4xl md:text-5xl font-bold">
-              25 Years of{" "}
+                Growing with{" "}
               <span
                 className="bg-clip-text text-transparent"
                 style={{ backgroundImage: "linear-gradient(90deg, #06B6D4, #22D3EE)" }}
               >
-                Milestones
+          Trust
               </span>
             </h2>
           </Reveal>
@@ -491,65 +492,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* ════════════════════════════════════
-          ACCREDITATIONS
-      ════════════════════════════════════ */}
-      <section className="px-4 sm:px-6 pb-28">
-        <div className="max-w-7xl mx-auto">
-          <Reveal className="text-center mb-12">
-            <SectionLabel text="Certifications" />
-            <h2 className="text-4xl md:text-5xl font-bold">
-              Trusted &amp;{" "}
-              <span
-                className="bg-clip-text text-transparent"
-                style={{ backgroundImage: "linear-gradient(90deg, #D4A017, #F59E0B)" }}
-              >
-                Accredited
-              </span>
-            </h2>
-            <p className="text-cyan-200/50 mt-4 text-base max-w-md mx-auto">
-              Our certifications reflect our unwavering commitment to patient safety and quality care.
-            </p>
-          </Reveal>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {accreditations.map((a, i) => (
-              <Reveal key={i} delay={i * 80}>
-                <div
-                  className="rounded-2xl p-7 text-center group hover:scale-[1.03] transition-all duration-300"
-                  style={{
-                    background: `${a.color}08`,
-                    border: `1px solid ${a.color}20`,
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.border = `1px solid ${a.color}50`;
-                    e.currentTarget.style.boxShadow = `0 0 30px ${a.color}12`;
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.border = `1px solid ${a.color}20`;
-                    e.currentTarget.style.boxShadow = "none";
-                  }}
-                >
-                  <div
-                    className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 text-xl font-black"
-                    style={{
-                      background: `${a.color}15`,
-                      border: `1px solid ${a.color}30`,
-                      color: a.color,
-                      fontSize: "13px",
-                      letterSpacing: "0.05em",
-                    }}
-                  >
-                    {a.name}
-                  </div>
-                  <h4 className="text-white font-semibold text-base mb-1">{a.name}</h4>
-                  <p className="text-cyan-200/45 text-xs leading-snug">{a.full}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ════════════════════════════════════
           LEADERSHIP TEAM

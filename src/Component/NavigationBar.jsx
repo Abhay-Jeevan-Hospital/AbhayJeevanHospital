@@ -92,17 +92,17 @@ const NavigationBar = () => {
 
                     {/* Desktop CTA */}
                     <div className="hidden lg:flex items-center gap-3">
-                        <div className="bg-cyan-50 border border-[#082c77] rounded-xl px-4 py-2 text-center">
+                        <div className="bg-gay-50 border border-[#082c77] rounded-xl px-4 py-2 text-center">
                             <p className="text-[10px] font-bold text-[#082c77]">
                                 EMERGENCY
                             </p>
 
                             <p className="text-sm font-extrabold text-[#082c77]">
-                                📞 98765 43210
+                                📞 +91 93353 99454
                             </p>
                         </div>
 
-                        <Link to='book-appointment' className="bg-gradient-to-r from-[#082c77] to-cyan-300 text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-md hover:shadow-lg transition">
+                        <Link to='book-appointment' className="bg-gradient-to-r from-[#082c77] to-cyan-500 text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-md hover:shadow-lg transition">
                             Book Appointment
                         </Link>
                     </div>
@@ -169,8 +169,8 @@ const NavigationBar = () => {
                             Contact
                         </Link>
 
-                        <div className="mt-5 bg-red-50 border border-red-200 rounded-xl p-4">
-                            <p className="text-xs font-bold text-red-700">
+                        <div className="mt-5 bg-gray-50 border border-cyan-200 rounded-xl p-4">
+                            <p className="text-xs font-bold text-blue-900">
                                 24×7 Emergency
                             </p>
 
@@ -179,7 +179,7 @@ const NavigationBar = () => {
                             </p>
                         </div>
 
-                        <button className="mt-4 w-full bg-red-700 text-white py-3 rounded-xl font-semibold">
+                        <button className="mt-4 w-full bg-blue-900 text-white py-3 rounded-xl font-semibold">
                             Book Appointment
                         </button>
                     </div>
