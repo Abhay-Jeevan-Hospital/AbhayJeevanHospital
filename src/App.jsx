@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './App.css'
-import AbhayJeevanHospital from './Component/AbhayJeevanHospital'
 import Home from './Component/Home'
 import NavigationBar from './Component/NavigationBar'
 import Footer from './Component/Footer'

@@ -17,6 +17,7 @@ import GeneralMedicine from './Page/Specialities/GeneralMedicine.jsx'
 import Paediiatrics from './Page/Specialities/Paediiatrics.jsx'
 import GeneralSurgery from './Page/Specialities/GeneralSurgery.jsx'
 import PlasticAndReconstructiveSurgery from './Page/Specialities/PlasticAndReconstructiveSurgery.jsx'
+import ContactForm from './Page/ContactForm.jsx'
 // import { BrowserRouter } from 'react-router-dom'
 const router = createBrowserRouter([
   {
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'book-appointment',
-        element: <BookAppointment/>
+        element: <ContactForm/>
       },
       {
         path: 'gallery',

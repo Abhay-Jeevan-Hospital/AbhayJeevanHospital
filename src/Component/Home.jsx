@@ -5,6 +5,8 @@ import Hero from './Hero'
 import Consultant from '../Page/Consultants'
 import GalleryHome from './GalleryHome'
 import HeroSection from './HeroSection'
+import AboutSection from './AboutSection'
+import PreFooterCTA from './PreFooterCTA'
 // import BreadCrumb from './BreadCrumb'
 
 // import AppBread from './Breadcrumb'
@@ -18,8 +20,10 @@ const Home = () => {
 
     {/* <Hero/> */}
     <HeroSection/>
-    <Consultant/>
+    <AboutSection/>
     <GalleryHome/>
+    <Consultant/>
+    <PreFooterCTA/>
 
     
     {/* <Footer/> */}

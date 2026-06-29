@@ -22,7 +22,7 @@ function EcgLine() {
             600,18 620,18 630,4 640,32 650,2 662,34 672,18 800,18
           "
           fill="none"
-          stroke="#06B6D4"
+          stroke="#FCA311"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -30,7 +30,7 @@ function EcgLine() {
             strokeDasharray: 1400,
             strokeDashoffset: 1400,
             animation: "drawEcg 2.4s ease forwards 0.6s",
-            filter: "drop-shadow(0 0 5px #06B6D4) drop-shadow(0 0 2px #22d3ee)",
+            filter: "drop-shadow(0 0 5px #FCA311) drop-shadow(0 0 2px #FCA311)",
           }}
         />
       </svg>
@@ -74,7 +74,7 @@ function StatCounter({ end, suffix, label }) {
         style={{ fontVariantNumeric: "tabular-nums" }}
       >
         {count}
-        <span className="text-cyan-400">{suffix}</span>
+        <span className="text-[#FCA311]">{suffix}</span>
       </span>
       <span className="text-slate-400 text-xs sm:text-sm mt-1 font-medium tracking-wide">
         {label}
@@ -203,7 +203,7 @@ export default function HeroSection() {
                   className="w-2 h-2 rounded-full bg-cyan-400"
                   style={{ animation: "pulse-dot 1.8s ease-in-out infinite" }}
                 />
-                <span className="text-cyan-400 text-xs sm:text-sm font-semibold tracking-[0.18em] uppercase">
+                <span className="text-[#FCA311] text-xs sm:text-sm font-semibold tracking-[0.18em] uppercase">
                   Abhay Jeevan Hospital • Prayagraj
                 </span>
               </span>
@@ -229,12 +229,12 @@ export default function HeroSection() {
                 className="text-4xl sm:text-5xl lg:text-6xl xl:text-[4.2rem] font-black text-white leading-[1.08] tracking-tight"
               >
                 Your Health,{" "}
-                <span
+                <span className="text-[#FCA311]"
                   style={{
                     background:
                       "linear-gradient(90deg, #06B6D4, #38bdf8, #7dd3fc)",
                     WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
+                    
                     backgroundClip: "text",
                   }}
                 >
@@ -292,13 +292,13 @@ export default function HeroSection() {
               className="hero-fade-up flex flex-wrap gap-3 sm:gap-4"
               style={{ animationDelay: "0.74s" }}
             >
-              <button className="btn-primary px-7 sm:px-9 py-3.5 rounded-xl text-white font-bold text-sm sm:text-base shadow-lg">
+              <button className="bg-[#FCA311] px-7 sm:px-9 py-3.5 rounded-xl text-white font-bold text-sm sm:text-base shadow-lg">
                 Appointment Book Karein
               </button>
               <button
                 className="btn-ghost px-7 sm:px-9 py-3.5 rounded-xl text-white font-bold text-sm sm:text-base"
                 style={{
-                  border: "1.5px solid rgba(6,182,212,0.45)",
+                  border: "1.5px solid rgba(252,163,17,0.45)",
                 }}
               >
                 Emergency: 108
@@ -315,7 +315,7 @@ export default function HeroSection() {
                 className="mb-6 h-px"
                 style={{
                   background:
-                    "linear-gradient(90deg, rgba(6,182,212,0.5) 0%, rgba(6,182,212,0.08) 100%)",
+                    "linear-gradient(90deg, rgba(252,163,27,0.5) 0%, rgba(252,163,17,0.08) 100%)",
                 }}
               />
               <div className="flex items-center gap-6 sm:gap-10">
@@ -327,7 +327,7 @@ export default function HeroSection() {
                 <div className="stat-divider self-stretch hidden sm:block" />
                 <div className="hidden sm:flex flex-col items-center text-center">
                   <span className="text-3xl sm:text-4xl font-black text-white leading-none">
-                    24<span className="text-cyan-400">/7</span>
+                    24<span className="text-[#FCA311]">/7</span>
                   </span>
                   <span className="text-slate-400 text-xs sm:text-sm mt-1 font-medium tracking-wide">
                     Emergency
@@ -354,7 +354,7 @@ export default function HeroSection() {
               style={{
                 background: "rgba(3,10,30,0.6)",
                 backdropFilter: "blur(16px)",
-                border: "1px solid rgba(6,182,212,0.2)",
+                border: "1px solid rgba(252,163,17,0.2)",
               }}
             >
               <img src= {doc.emoji}
@@ -370,7 +370,7 @@ export default function HeroSection() {
                 <div className="text-white text-sm font-bold leading-tight">
                   {doc.name}
                 </div>
-                <div className="text-cyan-400/80 text-xs leading-tight mt-0.5">
+                <div className="text-[#FCA311]/80 text-xs leading-tight mt-0.5">
                   {doc.spec}
                 </div>
               </div>

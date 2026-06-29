@@ -12,7 +12,7 @@ const doctors = [
     experience: "12 Years",
     timing: "Mon–Sat | 10:00 AM – 2:00 PM",
     emoji: DrAnjali,
-    color: "#c0392b",
+    color: "#FCA311",
     tagline: "Heart Care Specialist",
   },
   {
@@ -23,7 +23,7 @@ const doctors = [
     experience: "10 Years",
     timing: "Mon–Fri | 11:00 AM – 3:00 PM",
     emoji: DrLal,
-    color: "#2980b9",
+    color: "#FCA311",
     tagline: "Bone & Joint Expert",
   },
   {
@@ -34,7 +34,7 @@ const doctors = [
     experience: "20 Years",
     timing: "Tue–Sun | 3:00 pM – 4:00 PM",
     emoji: "🌸",
-    color: "#8e44ad",
+    color: "#FCA311",
     tagline: "Child's health Specialist",
   },
   {
@@ -45,7 +45,7 @@ const doctors = [
     experience: "16 Years",
     timing: "Mon–Sat | 12:00 PM – 4:00 PM",
     emoji: "🧠",
-    color: "#16a085",
+    color: "#FCA311",
     tagline: "Brain & Spine Specialist",
   },
   {
@@ -56,7 +56,7 @@ const doctors = [
     experience: "16 Years",
     timing: "Mon–Sat | 12:00 PM – 4:00 PM",
     emoji: "🧠",
-    color: "#16a085",
+    color: "#FCA311",
     tagline: "Plastic Surgeon",
   },
 ];
@@ -148,15 +148,15 @@ export default function Consultant() {
     <>
       {/* <Breadcrumb/> */}
       <div
-        className="min-h-screen bg-blue-950 flex flex-col mt-12 md:mt-20 items-center justify-center py-10 md:py-16 px-3 sm:px-4 overflow-hidden"
+        className="min-h-screen bg-[#0B1F3A] flex flex-col mt12 md:mt20 items-center justify-center py-10 md:py-16 px-3 sm:px-4 overflow-hidden"
         style={{ fontFamily: "'Segoe UI', system-ui, sans-serif" }}
       >
         {/* Header */}
         <div className="text-center mb-12">
-          <span className="inline-block bg-cyan-100 text-blue-950 text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4">
+          <span className="inline-block bg-[#FCA311] text-blue-950 text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4">
             Our Medical Team
           </span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-cyan-500 mb-2">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#FCA311] mb-2">
             Meet Our <span className="text-white">Specialists</span>
           </h2>
           <p className="text-gray-50 text-sm sm:text-base max-w-md mx-auto px-2">
@@ -214,7 +214,7 @@ export default function Consultant() {
           </div>
           <a
             href="#"
-            className="ml-4 bg-cyan-500 hover:bg-blue-blue-950 text-white text-xs font-semibold px-4 py-2 rounded-xl transition-colors"
+            className="ml-4 bg-[#FCA311] hover:bg-blue-blue-950 text-white text-xs font-semibold px-4 py-2 rounded-xl transition-colors"
           >
             Book OPD
           </a>

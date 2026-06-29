@@ -39,7 +39,7 @@ const NavigationBar = () => {
                                 Abhay Jeevan Hospital
                             </h2>
 
-                            <p className="text-[10px] tracking-widest font-semibold text-cyan-500 mt-1">
+                            <p className="text-[10px] tracking-widest font-semibold text-[#FCA311] mt-1">
                                 24×7 EMERGENCY · MULTISPECIALTY
                             </p>
                         </div>
@@ -77,7 +77,7 @@ const NavigationBar = () => {
 
                         <Link
                             to="/gallery"
-                            className="px-4 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-red-50 hover:text-red-700 transition"
+                            className="px-4 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-cyan-50 hover:text- transition"
                         >
                             Gallery
                         </Link>
@@ -102,7 +102,7 @@ const NavigationBar = () => {
                             </p>
                         </div>
 
-                        <Link to='book-appointment' className="bg-gradient-to-r from-[#082c77] to-cyan-500 text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-md hover:shadow-lg transition">
+                        <Link to='book-appointment' className="bg-blue-950 text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-md hover:shadow-lg transition">
                             Book Appointment
                         </Link>
                     </div>

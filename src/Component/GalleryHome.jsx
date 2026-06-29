@@ -14,7 +14,7 @@ const images = [DrAnjaliC, DrLalOPDA, DrAnjaliOPDA, AHOutA, Reception, Reception
 
 export default function InfiniteGallerySlider() {
   return (
-    <section className="relative w-full overflow-hidden bg-blue-950 py-12">
+    <section className="relative w-full overflow-hidden bg-[#0B1F3A] py-12">
       {/* Heading */}
       <div className="mx-auto mb-10 max-w-7xl px-4 text-center">
         {/* <span className="mb-2 inline-block rounded-full border border-cyan-500/30 bg-cyan-500/10 px-4 py-1 text-sm font-medium text-cyan-400">
@@ -72,10 +72,10 @@ export default function InfiniteGallerySlider() {
       </div> */}
 
       {/* Gradient Fade Left */}
-      <div className="pointer-events-none absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-slate-950 to-transparent md:w-40" />
+      {/* <div className="pointer-events-none absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-slate-950 to-transparent md:w-40" /> */}
 
       {/* Gradient Fade Right */}
-      <div className="pointer-events-none absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-slate-950 to-transparent md:w-40" />
+      {/* <div className="pointer-events-none absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-slate-950 to-transparent md:w-40" /> */}
 
       <style>{`
         .slider-track {

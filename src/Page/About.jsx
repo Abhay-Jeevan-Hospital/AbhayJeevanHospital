@@ -272,13 +272,13 @@ export default function About() {
               <div
                 className="absolute -top-5 -right-5 rounded-2xl px-5 py-4 text-center"
                 style={{
-                  background: "rgba(11,31,58,0.95)",
+                  background: "rgba(#OB1F3A 0.95)",
                   border: "1px solid rgba(212,160,23,0.3)",
                   backdropFilter: "blur(16px)",
                   boxShadow: "0 8px 40px rgba(0,0,0,0.4)",
                 }}
               >
-                <div className="text-2xl font-bold" style={{ color: "#D4A017" }}>NABH</div>
+                <div className="text-2xl font-bold" style={{ color: "#FCA311" }}>NABH</div>
                 <div className="text-xs text-cyan-300/60 mt-0.5">Accredited</div>
               </div>
             </div>
