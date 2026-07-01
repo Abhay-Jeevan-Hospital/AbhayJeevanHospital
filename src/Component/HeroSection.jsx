@@ -3,6 +3,8 @@ import AHHero from '../assets/AHHero.png'
 import DrAnjaliC from '../assets/DrAnjaliC.jpeg'
 import DrLalOPD from '../assets/DrLalOPD.png'
 import DrAnjali from '../assets/Consultants/DrAnjali.jpeg'
+// import DrAnjaliCverticle from '../assets/DrAnjaliCverticle.jpeg'
+import DrAnjaliCverticle from '../assets/DrAnjaliCverticle.jpg'
 import DrLal from '../assets/Consultants/DrLal.jpeg'
 
 /* ─── Animated ECG / heartbeat line (SVG) ───────────────────────────── */
@@ -152,10 +154,11 @@ export default function HeroSection() {
         <div className="absolute inset-0">
           <img
             // src={AHHero}
-            src={DrAnjaliC}
+            // src={DrAnjaliC}
+            src={DrAnjaliCverticle}
             // src={DrLalOPD}
             alt="Abhay Jeevan Hospital"
-            className="w-full hidden lg:block h-full object-cover object-center"
+            className="w-full hidde lg:block h-full object-cover object-center"
           />
         </div>
 
