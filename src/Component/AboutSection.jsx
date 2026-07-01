@@ -47,9 +47,10 @@ export default function AboutSection() {
 
   return (
     <section
-      className="relative w-full bg-white overflow-hidden"
-      style={{ height: "100svh", minHeight: "620px", fontFamily: "'Inter', 'Segoe UI', sans-serif" }}
-    >
+      className="relative w-full bg-white overflow-hidden lg:h-screen"
+      // style={{ height: "100svh", minHeight: "620px", fontFamily: "'Inter', 'Segoe UI', sans-serif" }}
+
+>
       {/* Top accent bar */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-blue-950" />
 
@@ -172,7 +173,9 @@ export default function AboutSection() {
             }}
           >
             {/* Container for the 3 puzzle pieces */}
-            <div className="relative" style={{ width: "460px", height: "440px" }}>
+            <div className="relative flex items-center justify-center min-h-[420px] lg:min-h-0"
+            //  style={{ width: "460px", height: "440px" }}
+            >
 
               {/* ─── DECORATIVE BACKGROUND RING ─── */}
               <div
