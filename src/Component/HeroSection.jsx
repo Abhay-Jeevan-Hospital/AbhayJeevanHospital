@@ -158,7 +158,15 @@ export default function HeroSection() {
             src={DrAnjaliCverticle}
             // src={DrLalOPD}
             alt="Abhay Jeevan Hospital"
-            className="w-full hidde lg:block h-full object-cover object-center"
+            className="w-full md:hidden h-full object-cover object-center"
+          />
+          <img
+            // src={AHHero}
+            src={DrAnjaliC}
+            // src={DrAnjaliCverticle}
+            // src={DrLalOPD}
+            alt="Abhay Jeevan Hospital"
+            className="w-full hidden lg:block h-full object-cover object-center"
           />
         </div>
 
