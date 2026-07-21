@@ -289,7 +289,6 @@ export default function SpecialtiesSection() {
 
                                     </div>
                                 </Reveal>
-
                                 {/* Buttons */}
                                 <Reveal>
 
