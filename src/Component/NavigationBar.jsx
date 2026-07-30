@@ -33,6 +33,10 @@ const NavigationBar = () => {
             name: "Pediatrics ",
             path: "/specialities/Pediatrics",
         },
+        {
+            name: "Urology",
+            path: "/specialities/urology",
+        },
     ];
 
     useEffect(() => {

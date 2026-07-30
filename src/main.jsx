@@ -19,6 +19,7 @@ import GeneralSurgery from './Page/Specialities/GeneralSurgery.jsx'
 import PlasticAndReconstructiveSurgery from './Page/Specialities/PlasticAndReconstructiveSurgery.jsx'
 import ContactForm from './Page/ContactForm.jsx'
 import AbhayJeevanGallery from './Page/AbhayJeevanGallery.jsx'
+import Urology from './Page/Specialities/Urology.jsx'
 // import { BrowserRouter } from 'react-router-dom'
 const router = createBrowserRouter([
   {
@@ -80,6 +81,10 @@ const router = createBrowserRouter([
       {
         path: 'specialities/plastic-and-reconstructive-surgery',
         element: <PlasticAndReconstructiveSurgery/>
+      },
+      {
+        path: 'specialities/urology',
+        element: <Urology/>
       },
     ]
   }

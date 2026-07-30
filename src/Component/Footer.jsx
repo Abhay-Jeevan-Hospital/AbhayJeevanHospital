@@ -102,6 +102,34 @@ const Footer = () => {
                   General Meidicine
                   </Link>
                 </p>
+                <p
+                  className="text-slate-400 text-sm"
+                >
+                  <Link to='specialities/general-surgery'>
+                  General Surgery
+                  </Link>
+                </p>
+                <p
+                  className="text-slate-400 text-sm"
+                >
+                  <Link to='specialities/plastic-and-reconstructive-surgery'>
+                  Plastic Surgery
+                  </Link>
+                </p>
+                <p
+                  className="text-slate-400 text-sm"
+                >
+                  <Link to='specialities/pediatrics'>
+                  Pediatrics
+                  </Link>
+                </p>
+                <p
+                  className="text-slate-400 text-sm"
+                >
+                  <Link to='specialities/urology'>
+                  Urology
+                  </Link>
+                </p>
               {/* ))} */}
             </div>
           </div>
@@ -113,7 +141,7 @@ const Footer = () => {
             </h4>
 
             <div className="space-y-4">
-              <div>
+              {/* <div>
                 <p className="text-slate-500 text-xs font-semibold">
                   Monday – Saturday
                 </p>
@@ -131,7 +159,7 @@ const Footer = () => {
                 <p className="text-[#FCA311] font-bold">
                   5:00 PM – 8:00 PM
                 </p>
-              </div>
+              </div> */}
 
               <div>
 

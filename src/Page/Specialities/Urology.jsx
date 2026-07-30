@@ -1,83 +1,84 @@
 import React from "react";
 import {
+//   Kidney,
+  Droplets,
+  ShieldPlus,
+  Scan,
+  Activity,
+  Microscope,
   Stethoscope,
   HeartPulse,
-  Thermometer,
-  Pill,
-  Activity,
-  Wind,
-  Soup,
-  Apple,
-  ClipboardCheck,
+  Syringe,
   CheckCircle2,
 } from "lucide-react";
-import DrLal from "../../assets/Consultants/DrLal.jpeg";
+import Docemoji from "../../assets/Consultants/Docemoji.jpeg";
+
 import { Link } from "react-router-dom";
 
 const services = [
   {
-    icon: Stethoscope,
-    title: "General Health Consultation",
-    desc: "Comprehensive medical consultations for acute and chronic illnesses with accurate diagnosis and personalized treatment plans.",
+    icon: Syringe,
+    title: "Kidney Stone Treatment",
+    desc: "Comprehensive diagnosis and advanced treatment for kidney stones using modern techniques including medical management and minimally invasive procedures.",
   },
   {
-    icon: Thermometer,
-    title: "Fever & Infection Management",
-    desc: "Diagnosis and treatment for viral fever, bacterial infections, dengue, typhoid, malaria, seasonal flu, and respiratory infections.",
+    icon: Droplets,
+    title: "Urinary Tract Infection (UTI)",
+    desc: "Expert evaluation and treatment for urinary tract infections with accurate diagnosis, medications, and preventive care for long-term urinary health.",
   },
   {
-    icon: Pill,
-    title: "Diabetes Management",
-    desc: "Complete diabetes care including blood sugar monitoring, medication management, dietary counseling, and complication prevention.",
-  },
-  {
-    icon: HeartPulse,
-    title: "Hypertension & Heart Health",
-    desc: "Expert care for high blood pressure, cholesterol disorders, cardiovascular risk assessment, and preventive heart care.",
+    icon: ShieldPlus,
+    title: "Prostate Disease Treatment",
+    desc: "Specialized management of enlarged prostate (BPH), prostatitis, and other prostate disorders using advanced diagnostic and treatment methods.",
   },
   {
     icon: Activity,
-    title: "Thyroid & Hormonal Disorders",
-    desc: "Diagnosis and long-term treatment for thyroid disorders, hormonal imbalance, and metabolism-related conditions.",
+    title: "Urinary Incontinence Care",
+    desc: "Personalized treatment for bladder control problems in both men and women, improving comfort, confidence, and quality of life.",
   },
   {
-    icon: Wind,
-    title: "Respiratory Disease Care",
-    desc: "Treatment for asthma, bronchitis, allergies, chronic cough, respiratory infections, and other lung-related conditions.",
+    icon: Scan,
+    title: "Urological Cancer Screening",
+    desc: "Early detection and evaluation of kidney, bladder, prostate, and urinary tract cancers with modern diagnostic facilities.",
   },
   {
-    icon: Soup,
-    title: "Gastrointestinal Disorders",
-    desc: "Comprehensive treatment for acidity, gastritis, abdominal pain, constipation, diarrhea, liver disorders, and digestive diseases.",
+    icon: Microscope,
+    title: "Male Infertility Evaluation",
+    desc: "Complete assessment and treatment of male infertility, reproductive health issues, and related urological conditions.",
   },
   {
-    icon: Apple,
-    title: "Lifestyle Disease Management",
-    desc: "Management of obesity, fatty liver, high cholesterol, metabolic syndrome, and other lifestyle-related health conditions.",
+    icon: HeartPulse,
+    title: "Bladder Disorder Treatment",
+    desc: "Diagnosis and treatment for bladder infections, overactive bladder, urinary retention, and other bladder-related conditions.",
   },
   {
-    icon: ClipboardCheck,
-    title: "Preventive Health Check-ups",
-    desc: "Routine health screenings, blood tests, wellness consultations, and preventive healthcare packages for all age groups.",
+    icon: Syringe,
+    title: "Minimally Invasive Procedures",
+    desc: "Advanced laser and endoscopic urological procedures designed for faster recovery, less pain, and shorter hospital stays.",
+  },
+  {
+    icon: Stethoscope,
+    title: "General Urology Consultation",
+    desc: "Comprehensive consultation for kidney, bladder, urinary tract, and male reproductive health with personalized treatment planning.",
   },
 ];
 
 const features = [
-  "Experienced General Physicians",
+  "Experienced Urologist",
   "15-Bedded Multispecialty Hospital",
-  "Comprehensive Health Check-ups",
-  "Advanced Diagnostic Facilities",
+  "Advanced Kidney Stone Treatment",
+  "Modern Diagnostic Facilities",
+  "Laser & Endoscopic Procedures",
+  "Comprehensive Prostate Care",
+  "Male Reproductive Health Services",
   "Personalized Treatment Plans",
-  "Diabetes & Hypertension Management",
-  "Treatment for Acute & Chronic Illnesses",
-  "Preventive Healthcare Services",
-  "Affordable & Quality Medical Care",
-  "Hygienic Infrastructure",
-  "24×7 Emergency Medical Support",
-  "Patient-Centered Approach",
+  "High Success Rate",
+  "Affordable Urology Services",
+  "24×7 Emergency Support",
+  "Compassionate Patient Care",
 ];
 
-export default function GeneralMedicine() {
+export default function Urology() {
   return (
     <section className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-6">
@@ -87,28 +88,30 @@ export default function GeneralMedicine() {
         <div className="text-center max-w-4xl mx-auto">
 
           <span className="inline-block bg-[#FCA311]/10 text-[#FCA311] font-semibold px-5 py-2 rounded-full">
-            General Healthcare
+            Kidney & Urinary Care
           </span>
 
           <h2 className="text-4xl md:text-5xl font-bold text-[#0B1F3A] mt-6 leading-tight">
-            General Medicine Department
+            Urology Department
           </h2>
 
           <div className="w-24 h-1 bg-[#FCA311] mx-auto mt-5 rounded-full"></div>
 
           <p className="text-gray-600 text-lg leading-8 mt-8">
-            At <strong>Abhay Jeevan Hospital</strong>, our General Medicine
-            Department provides comprehensive diagnosis, treatment, and
-            preventive healthcare for patients of all ages. We focus on early
-            diagnosis, evidence-based treatment, and personalized care to help
-            every patient achieve better health.
+            At <strong>Abhay Jeevan Hospital</strong>, our Urology Department
+            provides comprehensive diagnosis and treatment for diseases related
+            to the kidneys, urinary tract, bladder, prostate, and male
+            reproductive system. Our experienced specialists utilize advanced
+            technology and evidence-based treatment methods to deliver safe,
+            effective, and personalized urological care.
           </p>
 
           <p className="text-gray-600 text-lg leading-8 mt-5">
-            Whether you need treatment for common illnesses, chronic diseases,
-            preventive health check-ups, or long-term disease management, our
-            experienced physicians are committed to delivering trusted and
-            compassionate medical care.
+            From kidney stone management and urinary infections to prostate
+            disorders, bladder diseases, male infertility, and minimally
+            invasive urological procedures, we are committed to helping every
+            patient achieve better urinary health with compassionate,
+            high-quality medical care.
           </p>
 
         </div>
@@ -124,12 +127,13 @@ export default function GeneralMedicine() {
             </span>
 
             <h3 className="text-4xl font-bold text-[#0B1F3A] mt-3">
-              Comprehensive Medical Services
+              Comprehensive Urology Services
             </h3>
 
             <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
-              Providing expert diagnosis, effective treatment, and preventive
-              healthcare services for a healthier life.
+              Advanced diagnosis and treatment for kidney stones, prostate
+              disorders, urinary tract diseases, bladder conditions, male
+              reproductive health, and minimally invasive urological procedures.
             </p>
 
           </div>
@@ -173,10 +177,10 @@ export default function GeneralMedicine() {
           </div>
 
         </div>
-        {/* Why Choose Us */}
+
+                {/* Why Choose Us */}
 
         <div className="mt-24 grid lg:grid-cols-2 gap-14 items-center">
-
 
           <div>
 
@@ -189,11 +193,13 @@ export default function GeneralMedicine() {
             </h3>
 
             <p className="text-gray-600 mt-6 leading-8">
-              Our General Medicine Department is dedicated to providing
-              accurate diagnosis, timely treatment, and compassionate medical
-              care. We combine experienced physicians, modern diagnostic
-              facilities, and evidence-based treatment to help patients achieve
-              better health and long-term wellness.
+              Our Urology Department is dedicated to providing advanced,
+              evidence-based care for kidney, bladder, urinary tract, and
+              prostate disorders. With experienced specialists, modern
+              diagnostic facilities, minimally invasive procedures, and a
+              patient-centered approach, we ensure accurate diagnosis,
+              effective treatment, faster recovery, and long-term urinary
+              health for every patient.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-5 mt-10">
@@ -222,6 +228,7 @@ export default function GeneralMedicine() {
 
           </div>
 
+          {/* Commitment Card */}
 
           <div className="bg-[#0B1F3A] rounded-3xl p-10 md:p-12 text-white shadow-2xl">
 
@@ -230,33 +237,35 @@ export default function GeneralMedicine() {
             </span>
 
             <h3 className="text-3xl md:text-4xl font-bold mt-6 leading-tight">
-              Your Health Is Our Priority
+              Delivering Advanced & Compassionate Urological Care
             </h3>
 
             <div className="w-24 h-1 bg-[#FCA311] rounded-full mt-5 mb-8"></div>
 
             <p className="text-gray-200 leading-8">
-              At <strong>Abhay Jeevan Hospital</strong>, we believe quality
-              healthcare begins with accurate diagnosis, compassionate
-              treatment, and preventive care. Our General Medicine Department
-              is committed to delivering personalized healthcare services that
-              promote long-term health and improve the quality of life for
-              every patient.
+              At <strong>Abhay Jeevan Hospital</strong>, we believe every
+              patient deserves expert urological care with dignity,
+              compassion, and clinical excellence. Our specialists use
+              advanced diagnostic tools and minimally invasive treatment
+              techniques to manage kidney stones, urinary tract diseases,
+              bladder disorders, prostate conditions, and male reproductive
+              health problems with precision and safety.
             </p>
 
             <p className="text-gray-300 leading-8 mt-6">
-              Whether you require routine medical consultation, chronic disease
-              management, preventive health check-ups, or emergency medical
-              attention, our experienced team is dedicated to providing trusted
-              healthcare with professionalism, compassion, and excellence.
+              Whether you require treatment for kidney stones, urinary
+              infections, enlarged prostate, urinary incontinence, male
+              infertility, or preventive urological screening, our team is
+              committed to providing personalized care, faster recovery,
+              improved quality of life, and long-term urinary wellness
+              through modern medical practices.
             </p>
-
 
           </div>
 
         </div>
 
-        {/* Doctor Section */}
+                {/* Doctor Section */}
 
         <div className="mt-24">
 
@@ -267,13 +276,14 @@ export default function GeneralMedicine() {
             </span>
 
             <h3 className="text-4xl font-bold text-[#0B1F3A] mt-3">
-              General Physician
+              Urologist
             </h3>
 
             <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
-              Our experienced General Physician provides comprehensive healthcare,
-              accurate diagnosis, preventive care, and personalized treatment for
-              patients of all age groups, helping them maintain a healthier life.
+              Our experienced Urologist specializes in diagnosing and treating
+              kidney, bladder, urinary tract, and male reproductive system
+              disorders with advanced technology, personalized treatment plans,
+              and compassionate patient care.
             </p>
 
           </div>
@@ -287,8 +297,8 @@ export default function GeneralMedicine() {
               <div className="relative h-[420px] lg:h-auto bg-gray-100">
 
                 <img
-                  src={DrLal}
-                  alt="General Physician"
+                  src={Docemoji}
+                  alt="Urologist"
                   className="w-full h-full object-cover"
                 />
 
@@ -307,15 +317,15 @@ export default function GeneralMedicine() {
               <div className="p-10 lg:p-12 flex flex-col justify-center">
 
                 <span className="text-[#FCA311] font-semibold uppercase tracking-wider">
-                  General Medicine Specialist
+                  Kidney & Urinary Care Specialist
                 </span>
 
                 <h3 className="text-4xl font-bold text-[#0B1F3A] mt-3">
-                  Dr. Lal Ratnakar Singh
+                  Dr. Y.B Gupta
                 </h3>
 
                 <p className="text-xl text-gray-600 font-medium mt-2">
-                  MBBS, MD, ACPE, CPE (General Medicine)
+                  MBBS, MS, M.Ch (Urology)
                 </p>
 
                 <div className="grid sm:grid-cols-2 gap-5 mt-8">
@@ -335,11 +345,11 @@ export default function GeneralMedicine() {
                   <div className="bg-[#F8FAFC] rounded-2xl p-5">
 
                     <p className="text-sm text-gray-500">
-                      Patients Treated
+                      Successful Procedures
                     </p>
 
                     <h4 className="text-2xl font-bold text-[#0B1F3A] mt-1">
-                      20,000+
+                      5,000+
                     </h4>
 
                   </div>
@@ -347,13 +357,13 @@ export default function GeneralMedicine() {
                 </div>
 
                 <p className="text-gray-600 leading-8 mt-8">
-                  Dr. Doctor Name is an experienced General Physician specializing in
-                  the diagnosis, treatment, and prevention of a wide range of acute
-                  and chronic medical conditions. With a patient-centered approach,
-                  the doctor provides comprehensive care for diabetes, hypertension,
-                  thyroid disorders, infections, respiratory illnesses, digestive
-                  problems, and lifestyle-related diseases while promoting preventive
-                  healthcare and long-term wellness.
+                  Dr. Doctor Name is an experienced Urologist specializing in
+                  kidney stone treatment, prostate disorders, urinary tract
+                  infections, bladder diseases, male infertility, urinary
+                  incontinence, and minimally invasive urological procedures.
+                  The doctor is committed to delivering accurate diagnosis,
+                  advanced treatment, and compassionate care to help patients
+                  achieve better urinary health and improved quality of life.
                 </p>
 
                 {/* Expertise */}
@@ -361,14 +371,14 @@ export default function GeneralMedicine() {
                 <div className="flex flex-wrap gap-3 mt-8">
 
                   {[
-                    "General Consultation",
-                    "Diabetes Care",
-                    "Hypertension",
-                    "Thyroid Disorders",
-                    "Fever Treatment",
-                    "Respiratory Diseases",
-                    "Preventive Health",
-                    "Lifestyle Disorders",
+                    "Kidney Stones",
+                    "Prostate Disorders",
+                    "UTI Treatment",
+                    "Bladder Diseases",
+                    "Male Infertility",
+                    "Urinary Incontinence",
+                    "Laser Surgery",
+                    "Endourology",
                   ].map((item) => (
 
                     <span
@@ -386,10 +396,11 @@ export default function GeneralMedicine() {
 
                 <div className="flex flex-wrap gap-5 mt-10">
 
-                  <Link to='/book-appointment' className="bg-[#FCA311] text-[#0B1F3A] px-8 py-4 rounded-full font-bold hover:bg-[#0B1F3A] hover:text-white transition-all duration-300">
-
+                  <Link
+                    to="/book-appointment"
+                    className="bg-[#FCA311] text-[#0B1F3A] px-8 py-4 rounded-full font-bold hover:bg-[#0B1F3A] hover:text-white transition-all duration-300"
+                  >
                     Book Appointment
-
                   </Link>
 
                 </div>

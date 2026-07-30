@@ -311,11 +311,11 @@ export default function PlasticAndReconstructiveSurgery() {
         </span>
 
         <h3 className="text-4xl font-bold text-[#0B1F3A] mt-3">
-          Dr. Doctor Name
+          Dr. Pankj Singh
         </h3>
 
         <p className="text-xl text-gray-600 font-medium mt-2">
-          M.Ch. Plastic Surgery | MS General Surgery
+          MBBS, MS, M.Ch.
         </p>
 
         <div className="grid sm:grid-cols-2 gap-5 mt-8">
@@ -327,7 +327,7 @@ export default function PlasticAndReconstructiveSurgery() {
             </p>
 
             <h4 className="text-2xl font-bold text-[#0B1F3A] mt-1">
-              15+ Years
+              10+ Years
             </h4>
 
           </div>

@@ -328,7 +328,7 @@ export default function GeneralSurgery() {
                     </p>
 
                     <h4 className="text-2xl font-bold text-[#0B1F3A] mt-1">
-                      10+ Years
+                      7+ Years
                     </h4>
 
                   </div>

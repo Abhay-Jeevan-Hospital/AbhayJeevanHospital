@@ -288,7 +288,7 @@ export default function Gynecology() {
                     </p>
 
                     <h4 className="text-2xl font-bold text-[#0B1F3A] mt-1">
-                      15+ Years
+                      9+ Years
                     </h4>
 
                   </div>
