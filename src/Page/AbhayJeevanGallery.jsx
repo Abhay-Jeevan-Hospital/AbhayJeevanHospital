@@ -14,6 +14,7 @@ import ReceptionA from '../assets/gallery/ReceptionA.jpeg'
 import AHOut from '../assets/gallery/AHOut.jpeg'
 import HospitalInterior from '../assets/gallery/HospitalInterior.jpeg'
 import NICU2 from '../assets/gallery/NICU2.jpeg'
+import { Helmet } from "react-helmet-async";
 
 const galleryData = [
   {
@@ -193,6 +194,72 @@ export default function AbhayJeevanGallery() {
   // };
 
   return (
+    <>
+<Helmet>
+        <title>
+          Hospital Gallery | Abhay Jeevan Hospital, Jhunsi Prayagraj
+        </title>
+
+        <meta
+          name="description"
+          content="Explore the gallery of Abhay Jeevan Hospital, Jhunsi, Prayagraj. View our modern infrastructure, operation theatres, patient care facilities, advanced medical equipment, doctors, healthcare services, and hospital environment."
+        />
+
+        <meta
+          name="keywords"
+          content="Abhay Jeevan Hospital Gallery, Hospital Photos Prayagraj, Hospital Infrastructure, Operation Theatre, Medical Facilities, Hospital Images, Jhunsi Hospital, Best Hospital Prayagraj"
+        />
+
+        <meta name="author" content="Abhay Jeevan Hospital" />
+        <meta name="robots" content="index, follow" />
+
+        <meta
+          property="og:title"
+          content="Hospital Gallery | Abhay Jeevan Hospital"
+        />
+
+        <meta
+          property="og:description"
+          content="Take a look at the modern facilities, infrastructure, doctors, and patient care environment at Abhay Jeevan Hospital, Jhunsi, Prayagraj."
+        />
+
+        <meta property="og:type" content="website" />
+
+        <meta
+          property="og:url"
+          content="https://yourdomain.com/gallery"
+        />
+
+        <meta
+          property="og:image"
+          content="https://yourdomain.com/og-image.jpg"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <meta
+          name="twitter:title"
+          content="Hospital Gallery | Abhay Jeevan Hospital"
+        />
+
+        <meta
+          name="twitter:description"
+          content="Explore the gallery showcasing Abhay Jeevan Hospital's infrastructure, facilities, doctors, and patient care."
+        />
+
+        <meta
+          name="twitter:image"
+          content="https://yourdomain.com/og-image.jpg"
+        />
+
+        <link
+          rel="canonical"
+          href="https://yourdomain.com/gallery"
+        />
+      </Helmet>
+
+
+
     <div
       className="min-h-screen font-sans"
       style={{ backgound: "linear-gradient(135deg, #060F1E 0%, #0B1F3A 50%, #0D2647 100%)" }}
@@ -515,5 +582,6 @@ export default function AbhayJeevanGallery() {
       </section>
 
     </div>
+    </>
   );
 }

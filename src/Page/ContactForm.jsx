@@ -1,6 +1,7 @@
 import { useState } from "react";
 import OT from '../assets/gallery/OT.jpeg'
 import ReceptionB from '../assets/gallery/ReceptionB.jpeg'
+import { Helmet } from "react-helmet-async";
 export default function ContactForm() {
   const [result, setResult] = useState("");
   const [loading, setLoading] = useState(false);
@@ -22,6 +23,72 @@ export default function ContactForm() {
   };
 
   return (
+    <>
+<Helmet>
+        <title>
+          Book an Appointment | Abhay Jeevan Hospital, Jhunsi Prayagraj
+        </title>
+
+        <meta
+          name="description"
+          content="Book an appointment online with experienced doctors at Abhay Jeevan Hospital, Jhunsi, Prayagraj. Schedule your consultation quickly for expert medical care across multiple specialties."
+        />
+
+        <meta
+          name="keywords"
+          content="Book Appointment Prayagraj, Online Doctor Appointment, Hospital Appointment, Abhay Jeevan Hospital, Doctor Consultation Jhunsi, Best Hospital Prayagraj"
+        />
+
+        <meta name="author" content="Abhay Jeevan Hospital" />
+        <meta name="robots" content="index, follow" />
+
+        <meta
+          property="og:title"
+          content="Book an Appointment | Abhay Jeevan Hospital"
+        />
+
+        <meta
+          property="og:description"
+          content="Schedule your appointment with experienced doctors at Abhay Jeevan Hospital in Jhunsi, Prayagraj."
+        />
+
+        <meta property="og:type" content="website" />
+
+        <meta
+          property="og:url"
+          content="https://yourdomain.com/book-appointment"
+        />
+
+        <meta
+          property="og:image"
+          content="https://yourdomain.com/og-image.jpg"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <meta
+          name="twitter:title"
+          content="Book an Appointment | Abhay Jeevan Hospital"
+        />
+
+        <meta
+          name="twitter:description"
+          content="Book your appointment online with expert doctors at Abhay Jeevan Hospital, Jhunsi, Prayagraj."
+        />
+
+        <meta
+          name="twitter:image"
+          content="https://yourdomain.com/og-image.jpg"
+        />
+
+        <link
+          rel="canonical"
+          href="https://yourdomain.com/book-appointment"
+        />
+      </Helmet>
+
+
+
     <section className="w-full bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-12 items-stretch">
 
@@ -318,5 +385,6 @@ export default function ContactForm() {
 
       </div>
     </section>
+    </>
   );
 }

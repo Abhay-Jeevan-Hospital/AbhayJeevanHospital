@@ -79,6 +79,71 @@ const features = [
 
 export default function PlasticAndReconstructiveSurgery() {
   return (
+    <>
+     <Helmet>
+        <title>
+          Best Plastic Surgery Hospital in Jhunsi, Prayagraj | Abhay Jeevan
+          Hospital
+        </title>
+
+        <meta
+          name="description"
+          content="Abhay Jeevan Hospital offers expert plastic and reconstructive surgery services in Jhunsi, Prayagraj. Our specialists provide treatment for burn injuries, trauma reconstruction, scar revision, skin and soft tissue defects, hand injuries, and reconstructive surgical procedures with personalized care."
+        />
+
+        <meta
+          name="keywords"
+          content="Plastic Surgeon in Prayagraj, Plastic Surgery Hospital Jhunsi, Reconstructive Surgery, Burn Treatment, Scar Revision, Hand Surgery, Trauma Reconstruction, Cosmetic Surgery Consultation, Abhay Jeevan Hospital"
+        />
+
+        <meta name="author" content="Abhay Jeevan Hospital" />
+        <meta name="robots" content="index, follow" />
+
+        <meta
+          property="og:title"
+          content="Plastic & Reconstructive Surgery | Abhay Jeevan Hospital"
+        />
+
+        <meta
+          property="og:description"
+          content="Expert plastic and reconstructive surgery for burns, trauma, scar revision, and soft tissue reconstruction at Abhay Jeevan Hospital, Jhunsi, Prayagraj."
+        />
+
+        <meta property="og:type" content="website" />
+
+        <meta
+          property="og:url"
+          content="https://yourdomain.com/services/plastic-surgery"
+        />
+
+        <meta
+          property="og:image"
+          content="https://yourdomain.com/og-image.jpg"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <meta
+          name="twitter:title"
+          content="Plastic & Reconstructive Surgery | Abhay Jeevan Hospital"
+        />
+
+        <meta
+          name="twitter:description"
+          content="Comprehensive plastic and reconstructive surgery services by experienced specialists in Jhunsi, Prayagraj."
+        />
+
+        <meta
+          name="twitter:image"
+          content="https://yourdomain.com/og-image.jpg"
+        />
+
+        <link
+          rel="canonical"
+          href="https://yourdomain.com/services/plastic-surgery"
+        />
+      </Helmet>
+
     <section className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-6">
 
@@ -406,5 +471,6 @@ export default function PlasticAndReconstructiveSurgery() {
 
       </div>
     </section>
+    </>
   );
 }

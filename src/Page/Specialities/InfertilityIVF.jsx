@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import DrAnjali from "../../assets/Consultants/DrAnjali.jpeg";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const services = [
   {
@@ -79,6 +80,71 @@ const features = [
 
 export default function InfertilityDepartment() {
   return (
+    <>
+    <Helmet>
+        <title>
+          Infertility & IVF Treatment in Jhunsi, Prayagraj | Abhay Jeevan Hospital
+        </title>
+
+        <meta
+          name="description"
+          content="Get expert infertility evaluation and IVF consultation at Abhay Jeevan Hospital, Jhunsi, Prayagraj. Our experienced specialists provide personalized fertility care, advanced reproductive treatments, and compassionate support to help couples achieve parenthood."
+        />
+
+        <meta
+          name="keywords"
+          content="IVF Centre Prayagraj, Infertility Treatment Prayagraj, Fertility Specialist Jhunsi, IVF Hospital Prayagraj, Male Infertility, Female Infertility, Fertility Clinic, Abhay Jeevan Hospital"
+        />
+
+        <meta name="author" content="Abhay Jeevan Hospital" />
+        <meta name="robots" content="index, follow" />
+
+        <meta
+          property="og:title"
+          content="Infertility & IVF Treatment | Abhay Jeevan Hospital"
+        />
+
+        <meta
+          property="og:description"
+          content="Expert infertility evaluation, fertility consultation, and IVF care by experienced specialists at Abhay Jeevan Hospital, Jhunsi, Prayagraj."
+        />
+
+        <meta property="og:type" content="website" />
+
+        <meta
+          property="og:url"
+          content="https://yourdomain.com/services/infertility-ivf"
+        />
+
+        <meta
+          property="og:image"
+          content="https://yourdomain.com/og-image.jpg"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <meta
+          name="twitter:title"
+          content="Infertility & IVF Treatment | Abhay Jeevan Hospital"
+        />
+
+        <meta
+          name="twitter:description"
+          content="Advanced infertility and IVF consultation with experienced fertility specialists in Jhunsi, Prayagraj."
+        />
+
+        <meta
+          name="twitter:image"
+          content="https://yourdomain.com/og-image.jpg"
+        />
+
+        <link
+          rel="canonical"
+          href="https://yourdomain.com/services/infertility-ivf"
+        />
+      </Helmet>
+
+
     <section className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-6">
 
@@ -412,5 +478,6 @@ export default function InfertilityDepartment() {
 
       </div>
     </section>
+    </>
   );
 }

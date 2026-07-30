@@ -1,6 +1,7 @@
 import React from 'react'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { HelmetProvider } from "react-helmet-async";
 import './index.css'
 import App from './App.jsx'
 import { BrowserRouter, createBrowserRouter, RouterProvider } from 'react-router-dom'
@@ -24,76 +25,70 @@ import Urology from './Page/Specialities/Urology.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <><App/></>,
+    element: <><App /></>,
     children: [
       {
         path: '',
-        element: <Home/>
+        element: <Home />
       },
       {
         path: 'book-appointment',
-        element: <ContactForm/>
+        element: <ContactForm />
       },
       {
         path: 'about',
-        element: <About/>
+        element: <About />
       },
-      // {
-      //   path: 'gallery',
-      //   element: <Gallery/>
-      // },
       {
         path: 'gallery',
-        element: <AbhayJeevanGallery/>
-      },
-      {
-        path: 'specialities',
-        element: <OurSpecialities/>
+        element: <AbhayJeevanGallery />
       },
       {
         path: 'consultants',
-        element: <Consultant/>
+        element: <Consultant />
       },
       {
         path: 'contact',
-        element: <Contact/>
+        element: <Contact />
       },
       {
         path: 'specialities/obstetrics-gynecology',
-        element: <Gynecology/>
+        element: <Gynecology />
       },
       {
         path: 'specialities/infertility-and-ivf',
-        element: <InfertilityIVF/>
+        element: <InfertilityIVF />
       },
       {
         path: 'specialities/general-medicine',
-        element: <GeneralMedicine/>
+        element: <GeneralMedicine />
       },
       {
         path: 'specialities/pediatrics',
-        element: <Paediatrics/>
+        element: <Paediatrics />
       },
       {
         path: 'specialities/general-surgery',
-        element: <GeneralSurgery/>
+        element: <GeneralSurgery />
       },
       {
         path: 'specialities/plastic-and-reconstructive-surgery',
-        element: <PlasticAndReconstructiveSurgery/>
+        element: <PlasticAndReconstructiveSurgery />
       },
       {
         path: 'specialities/urology',
-        element: <Urology/>
+        element: <Urology />
       },
     ]
   }
 ])
 createRoot(document.getElementById('root')).render(
-    // <BrowserRouter>
+  // <BrowserRouter>
   <React.StrictMode>
-    {/* <App /> */}
-    <RouterProvider router={router}/>
+    <HelmetProvider>
+      {/* <App /> */}
+      <RouterProvider router={router} />
+    </HelmetProvider>
   </React.StrictMode>,
-    // </BrowserRouter>11
+  // </BrowserRouter>11
 )

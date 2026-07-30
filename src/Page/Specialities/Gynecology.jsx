@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import DrAnjali from "../../assets/Consultants/DrAnjali.jpeg";
+import { Helmet } from "react-helmet-async";
 
 const services = [
   {
@@ -77,6 +78,7 @@ const features = [
 
 export default function Gynecology() {
   return (
+    <>
     <section className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-6">
 
@@ -365,5 +367,6 @@ export default function Gynecology() {
 
       </div>
     </section>
+    </>
   );
 }

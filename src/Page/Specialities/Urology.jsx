@@ -12,6 +12,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import Docemoji from "../../assets/Consultants/Docemoji.jpeg";
+import { Helmet } from "react-helmet-async";
 
 import { Link } from "react-router-dom";
 
@@ -80,6 +81,70 @@ const features = [
 
 export default function Urology() {
   return (
+    <>
+     <Helmet>
+        <title>
+          Best Urology Hospital in Jhunsi, Prayagraj | Abhay Jeevan Hospital
+        </title>
+
+        <meta
+          name="description"
+          content="Abhay Jeevan Hospital provides expert urology services in Jhunsi, Prayagraj. Our experienced urologists diagnose and treat kidney stones, urinary tract infections, enlarged prostate, bladder disorders, urinary incontinence, and other urological conditions using advanced medical and surgical care."
+        />
+
+        <meta
+          name="keywords"
+          content="Urologist in Prayagraj, Urology Hospital Jhunsi, Kidney Stone Treatment, UTI Treatment, Prostate Treatment, Bladder Disorders, Urinary Incontinence, Urology Specialist, Abhay Jeevan Hospital"
+        />
+
+        <meta name="author" content="Abhay Jeevan Hospital" />
+        <meta name="robots" content="index, follow" />
+
+        <meta
+          property="og:title"
+          content="Urology Services | Abhay Jeevan Hospital"
+        />
+
+        <meta
+          property="og:description"
+          content="Expert diagnosis and treatment for kidney stones, urinary tract infections, prostate disorders, and other urological conditions at Abhay Jeevan Hospital, Jhunsi, Prayagraj."
+        />
+
+        <meta property="og:type" content="website" />
+
+        <meta
+          property="og:url"
+          content="https://yourdomain.com/services/urology"
+        />
+
+        <meta
+          property="og:image"
+          content="https://yourdomain.com/og-image.jpg"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <meta
+          name="twitter:title"
+          content="Best Urology Hospital | Abhay Jeevan Hospital"
+        />
+
+        <meta
+          name="twitter:description"
+          content="Comprehensive urology care for kidney stones, prostate problems, UTIs, and urinary disorders in Jhunsi, Prayagraj."
+        />
+
+        <meta
+          name="twitter:image"
+          content="https://yourdomain.com/og-image.jpg"
+        />
+
+        <link
+          rel="canonical"
+          href="https://yourdomain.com/services/urology"
+        />
+      </Helmet>
+
     <section className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-6">
 
@@ -415,5 +480,6 @@ export default function Urology() {
 
       </div>
     </section>
+    </>
   );
 }

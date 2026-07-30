@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import Docemoji from "../../assets/Consultants/Docemoji.jpeg";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const services = [
   {
@@ -79,6 +80,70 @@ const features = [
 
 export default function GeneralSurgery() {
   return (
+    <>
+     <Helmet>
+        <title>
+          Best General Surgery Hospital in Jhunsi, Prayagraj | Abhay Jeevan
+          Hospital
+        </title>
+
+        <meta
+          name="description"
+          content="Abhay Jeevan Hospital offers advanced general surgery services in Jhunsi, Prayagraj. Our experienced general surgeons provide safe and effective surgical care for hernia, appendix, gallbladder, piles, fistula, breast disorders, and other general surgical conditions."
+        />
+
+        <meta
+          name="keywords"
+          content="General Surgeon in Prayagraj, General Surgery Hospital Jhunsi, Hernia Surgery, Appendix Surgery, Gallbladder Surgery, Piles Treatment, Fistula Treatment, Surgical Care Prayagraj, Abhay Jeevan Hospital"
+        />
+
+        <meta name="author" content="Abhay Jeevan Hospital" />
+        <meta name="robots" content="index, follow" />
+
+        <meta
+          property="og:title"
+          content="General Surgery | Abhay Jeevan Hospital"
+        />
+
+        <meta
+          property="og:description"
+          content="Expert general surgery services including hernia, appendix, gallbladder, piles, fistula, and other surgical treatments at Abhay Jeevan Hospital, Jhunsi, Prayagraj."
+        />
+
+        <meta property="og:type" content="website" />
+
+        <meta
+          property="og:url"
+          content="https://yourdomain.com/services/general-surgery"
+        />
+
+        <meta
+          property="og:image"
+          content="https://yourdomain.com/og-image.jpg"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <meta
+          name="twitter:title"
+          content="Best General Surgery Hospital | Abhay Jeevan Hospital"
+        />
+
+        <meta
+          name="twitter:description"
+          content="Advanced general surgery with experienced surgeons for safe and effective treatment in Jhunsi, Prayagraj."
+        />
+
+        <meta
+          name="twitter:image"
+          content="https://yourdomain.com/og-image.jpg"
+        />
+
+        <link
+          rel="canonical"
+          href="https://yourdomain.com/services/general-surgery"
+        />
+      </Helmet>
     <section className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-6">
 
@@ -405,5 +470,6 @@ export default function GeneralSurgery() {
 
       </div>
     </section>
+    </>
   );
 }

@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import Docemoji from "../../assets/Consultants/Docemoji.jpeg";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const services = [
     {
@@ -79,6 +80,70 @@ const features = [
 
 export default function Pediatrics() {
     return (
+        <>
+         <Helmet>
+        <title>
+          Best Pediatrics Hospital in Jhunsi, Prayagraj | Abhay Jeevan Hospital
+        </title>
+
+        <meta
+          name="description"
+          content="Abhay Jeevan Hospital offers comprehensive pediatric care in Jhunsi, Prayagraj. Our experienced pediatricians provide newborn care, child health check-ups, vaccinations, growth and development monitoring, nutritional guidance, and treatment for common childhood illnesses."
+        />
+
+        <meta
+          name="keywords"
+          content="Pediatrician in Prayagraj, Child Specialist in Jhunsi, Pediatrics Hospital Prayagraj, Newborn Care, Vaccination, Child Health, Baby Doctor, Children's Hospital, Abhay Jeevan Hospital"
+        />
+
+        <meta name="author" content="Abhay Jeevan Hospital" />
+        <meta name="robots" content="index, follow" />
+
+        <meta
+          property="og:title"
+          content="Pediatrics & Child Care | Abhay Jeevan Hospital"
+        />
+
+        <meta
+          property="og:description"
+          content="Expert pediatric care including newborn care, vaccinations, growth monitoring, and treatment for childhood illnesses at Abhay Jeevan Hospital, Jhunsi, Prayagraj."
+        />
+
+        <meta property="og:type" content="website" />
+
+        <meta
+          property="og:url"
+          content="https://yourdomain.com/services/pediatrics"
+        />
+
+        <meta
+          property="og:image"
+          content="https://yourdomain.com/og-image.jpg"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <meta
+          name="twitter:title"
+          content="Best Pediatrics Hospital | Abhay Jeevan Hospital"
+        />
+
+        <meta
+          name="twitter:description"
+          content="Trusted pediatricians providing complete child healthcare, newborn care, and vaccinations in Jhunsi, Prayagraj."
+        />
+
+        <meta
+          name="twitter:image"
+          content="https://yourdomain.com/og-image.jpg"
+        />
+
+        <link
+          rel="canonical"
+          href="https://yourdomain.com/services/pediatrics"
+        />
+      </Helmet>
+
         <section className="bg-white py-20">
             <div className="max-w-7xl mx-auto px-6">
 
@@ -406,5 +471,6 @@ export default function Pediatrics() {
 
             </div>
         </section>
+        </>
     );
 }

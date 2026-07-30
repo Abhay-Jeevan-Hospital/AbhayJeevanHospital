@@ -12,7 +12,6 @@ import {
 import DrAnjali from "../assets/Consultants/DrAnjali.jpeg";
 import DrLal from "../assets/Consultants/DrLal.jpeg";
 import Docemoji from "../assets/Consultants/Docemoji.jpeg";
-import { Helmet } from "react-helmet-async";
 
 const doctors = [
   {
@@ -83,7 +82,7 @@ const doctors = [
   },
 ];
 
-export default function Consultants() {
+export default function ConsultantHome() {
   function useReveal() {
     const ref = useRef(null);
     const [visible, setVisible] = useState(false);
@@ -117,64 +116,7 @@ export default function Consultants() {
   }
   return (
     <>
-      <Helmet>
-        <title>
-          Our Consultants | Expert Doctors at Abhay Jeevan Hospital, Jhunsi Prayagraj
-        </title>
-
-        <meta
-          name="description"
-          content="Meet the experienced consultants and specialist doctors at Abhay Jeevan Hospital, Jhunsi, Prayagraj. Our expert team provides comprehensive healthcare across multiple specialties with compassionate and patient-focused care."
-        />
-
-        <meta
-          name="keywords"
-          content="Doctors in Prayagraj, Consultants in Prayagraj, Specialist Doctors, Abhay Jeevan Hospital Doctors, Orthopedic Doctor, Gynecologist, General Physician, Pediatrician, Surgeon, Jhunsi Hospital"
-        />
-
-        <meta name="author" content="Abhay Jeevan Hospital" />
-        <meta name="robots" content="index, follow" />
-
-        <meta
-          property="og:title"
-          content="Our Consultants | Abhay Jeevan Hospital"
-        />
-
-        <meta
-          property="og:description"
-          content="Meet our experienced consultants and specialist doctors dedicated to delivering quality healthcare in Jhunsi, Prayagraj."
-        />
-
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://yourdomain.com/consultants"
-        />
-        <meta
-          property="og:image"
-          content="https://yourdomain.com/og-image.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Our Consultants | Abhay Jeevan Hospital"
-        />
-        <meta
-          name="twitter:description"
-          content="Explore our team of experienced consultants and specialist doctors at Abhay Jeevan Hospital, Jhunsi, Prayagraj."
-        />
-        <meta
-          name="twitter:image"
-          content="https://yourdomain.com/og-image.jpg"
-        />
-
-        <link
-          rel="canonical"
-          href="https://yourdomain.com/consultants"
-        />
-      </Helmet>
-
+      
 
       <section className="bg-[#0B1F3A]  bg-whit py-16 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

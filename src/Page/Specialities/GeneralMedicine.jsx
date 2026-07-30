@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import DrLal from "../../assets/Consultants/DrLal.jpeg";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const services = [
   {
@@ -79,6 +80,71 @@ const features = [
 
 export default function GeneralMedicine() {
   return (
+    <>
+    <Helmet>
+        <title>
+          Best General Medicine Hospital in Jhunsi, Prayagraj | Abhay Jeevan
+          Hospital
+        </title>
+
+        <meta
+          name="description"
+          content="Abhay Jeevan Hospital provides comprehensive general medicine services in Jhunsi, Prayagraj. Our experienced physicians diagnose and treat fever, diabetes, hypertension, thyroid disorders, infections, respiratory diseases, digestive disorders, and other acute and chronic medical conditions."
+        />
+
+        <meta
+          name="keywords"
+          content="General Physician in Prayagraj, General Medicine Hospital Jhunsi, Internal Medicine Doctor, Diabetes Treatment, Hypertension Treatment, Fever Specialist, Thyroid Treatment, Best Hospital in Prayagraj, Abhay Jeevan Hospital"
+        />
+
+        <meta name="author" content="Abhay Jeevan Hospital" />
+        <meta name="robots" content="index, follow" />
+
+        <meta
+          property="og:title"
+          content="General Medicine | Abhay Jeevan Hospital"
+        />
+
+        <meta
+          property="og:description"
+          content="Expert diagnosis and treatment for diabetes, hypertension, fever, thyroid disorders, infections, respiratory and digestive diseases at Abhay Jeevan Hospital, Jhunsi, Prayagraj."
+        />
+
+        <meta property="og:type" content="website" />
+
+        <meta
+          property="og:url"
+          content="https://yourdomain.com/services/general-medicine"
+        />
+
+        <meta
+          property="og:image"
+          content="https://yourdomain.com/og-image.jpg"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <meta
+          name="twitter:title"
+          content="Best General Medicine Hospital | Abhay Jeevan Hospital"
+        />
+
+        <meta
+          name="twitter:description"
+          content="Experienced physicians providing comprehensive medical care for acute and chronic illnesses in Jhunsi, Prayagraj."
+        />
+
+        <meta
+          name="twitter:image"
+          content="https://yourdomain.com/og-image.jpg"
+        />
+
+        <link
+          rel="canonical"
+          href="https://yourdomain.com/services/general-medicine"
+        />
+      </Helmet>
+
     <section className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-6">
 
@@ -404,5 +470,6 @@ export default function GeneralMedicine() {
 
       </div>
     </section>
+    </>
   );
 }
