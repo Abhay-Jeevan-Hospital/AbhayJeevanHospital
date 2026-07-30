@@ -73,6 +73,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'specialities/plastic-and-reconstructive-surgery',
+        
         element: <PlasticAndReconstructiveSurgery />
       },
       {

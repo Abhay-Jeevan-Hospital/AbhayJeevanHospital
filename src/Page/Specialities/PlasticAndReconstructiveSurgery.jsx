@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import Docemoji from "../../assets/Consultants/Docemoji.jpeg";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const services = [
   {
