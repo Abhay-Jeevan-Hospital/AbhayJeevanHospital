@@ -83,7 +83,7 @@ export default function GeneralMedicine() {
     <>
     <Helmet>
         <title>
-          Best General Medicine Hospital in Jhunsi, Prayagraj | Abhay Jeevan
+          Best General Physician Hospital in Jhunsi, Prayagraj | Abhay Jeevan
           Hospital
         </title>
 
