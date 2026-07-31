@@ -56,12 +56,12 @@ export default function ContactForm() {
 
         <meta
           property="og:url"
-          content="https://yourdomain.com/book-appointment"
+          content="https://abhayjeevanhospital.com/book-appointment"
         />
 
         <meta
           property="og:image"
-          content="https://yourdomain.com/og-image.jpg"
+          content="https://abhayjeevanhospital.com/og-image.jpg"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -78,12 +78,12 @@ export default function ContactForm() {
 
         <meta
           name="twitter:image"
-          content="https://yourdomain.com/og-image.jpg"
+          content="https://abhayjeevanhospital.com/og-image.jpg"
         />
 
         <link
           rel="canonical"
-          href="https://yourdomain.com/book-appointment"
+          href="https://abhayjeevanhospital.com/book-appointment"
         />
       </Helmet>
 

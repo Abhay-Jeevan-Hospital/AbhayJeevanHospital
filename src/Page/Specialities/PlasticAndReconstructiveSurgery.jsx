@@ -114,12 +114,12 @@ export default function PlasticAndReconstructiveSurgery() {
 
         <meta
           property="og:url"
-          content="https://yourdomain.com/services/plastic-surgery"
+          content="https://abhayjeevanhospital.com/specialities/plastic-surgery"
         />
 
         <meta
           property="og:image"
-          content="https://yourdomain.com/og-image.jpg"
+          content="https://abhayjeevanhospital.com/og-image.jpg"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -136,12 +136,12 @@ export default function PlasticAndReconstructiveSurgery() {
 
         <meta
           name="twitter:image"
-          content="https://yourdomain.com/og-image.jpg"
+          content="https://abhayjeevanhospital.com/og-image.jpg"
         />
 
         <link
           rel="canonical"
-          href="https://yourdomain.com/services/plastic-surgery"
+          href="https://abhayjeevanhospital.com/specialities/plastic-surgery"
         />
       </Helmet>
 

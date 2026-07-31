@@ -113,12 +113,12 @@ export default function InfertilityDepartment() {
 
         <meta
           property="og:url"
-          content="https://yourdomain.com/services/infertility-ivf"
+          content="https://abhayjeevanhospital.com/specialities/infertility-ivf"
         />
 
         <meta
           property="og:image"
-          content="https://yourdomain.com/og-image.jpg"
+          content="https://abhayjeevanhospital.com/og-image.jpg"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -135,12 +135,12 @@ export default function InfertilityDepartment() {
 
         <meta
           name="twitter:image"
-          content="https://yourdomain.com/og-image.jpg"
+          content="https://abhayjeevanhospital.com/og-image.jpg"
         />
 
         <link
           rel="canonical"
-          href="https://yourdomain.com/services/infertility-ivf"
+          href="https://abhayjeevanhospital.com/specialities/infertility-ivf"
         />
       </Helmet>
 

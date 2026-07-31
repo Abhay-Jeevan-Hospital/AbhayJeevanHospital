@@ -188,11 +188,11 @@ export default function About() {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://yourdomain.com/about"
+          content="https://abhayjeevanhospital.com/about"
         />
         <meta
           property="og:image"
-          content="https://yourdomain.com/og-image.jpg"
+          content="https://abhayjeevanhospital.com/og-image.jpg"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -206,12 +206,12 @@ export default function About() {
         />
         <meta
           name="twitter:image"
-          content="https://yourdomain.com/og-image.jpg"
+          content="https://abhayjeevanhospital.com/og-image.jpg"
         />
 
         <link
           rel="canonical"
-          href="https://yourdomain.com/about"
+          href="https://abhayjeevanhospital.com/about"
         />
       </Helmet>
       <div

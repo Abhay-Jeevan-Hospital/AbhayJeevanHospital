@@ -114,12 +114,12 @@ export default function GeneralSurgery() {
 
         <meta
           property="og:url"
-          content="https://yourdomain.com/services/general-surgery"
+          content="https://abhayjeevanhospital.com/specialities/general-surgery"
         />
 
         <meta
           property="og:image"
-          content="https://yourdomain.com/og-image.jpg"
+          content="https://abhayjeevanhospital.com/og-image.jpg"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -136,12 +136,12 @@ export default function GeneralSurgery() {
 
         <meta
           name="twitter:image"
-          content="https://yourdomain.com/og-image.jpg"
+          content="https://abhayjeevanhospital.com/og-image.jpg"
         />
 
         <link
           rel="canonical"
-          href="https://yourdomain.com/services/general-surgery"
+          href="https://abhayjeevanhospital.com/specialities/general-surgery"
         />
       </Helmet>
     <section className="bg-white py-20">

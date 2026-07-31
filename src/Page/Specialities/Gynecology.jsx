@@ -79,6 +79,69 @@ const features = [
 export default function Gynecology() {
   return (
     <>
+    <Helmet>
+        <title>
+          Best Gynecology & Obstetrics Hospital in Jhunsi, Prayagraj | Abhay
+          Jeevan Hospital
+        </title>
+
+        <meta
+          name="description"
+          content="Abhay Jeevan Hospital offers expert gynecology and obstetrics care in Jhunsi, Prayagraj. Our experienced gynecologists provide pregnancy care, high-risk pregnancy management, infertility evaluation, menstrual disorder treatment, PCOS care, and women's health services."
+        />
+
+        <meta
+          name="keywords"
+          content="Best Gynecologist in Prayagraj, Gynecology Hospital Jhunsi, Obstetrician Prayagraj, Pregnancy Care, Normal Delivery, High Risk Pregnancy, PCOS Treatment, Women's Health, Abhay Jeevan Hospital"
+        />
+
+        <meta name="author" content="Abhay Jeevan Hospital" />
+        <meta name="robots" content="index, follow" />
+
+        <meta
+          property="og:title"
+          content="Gynecology & Obstetrics | Abhay Jeevan Hospital"
+        />
+
+        <meta
+          property="og:description"
+          content="Comprehensive gynecology and maternity care with experienced specialists at Abhay Jeevan Hospital, Jhunsi, Prayagraj."
+        />
+
+        <meta property="og:type" content="website" />
+
+        <meta
+          property="og:url"
+          content="https://abhayjeevanhospital.com/specialities/gynecology"
+        />
+
+        <meta
+          property="og:image"
+          content="https://abhayjeevanhospital.com/og-image.jpg"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <meta
+          name="twitter:title"
+          content="Best Gynecology & Obstetrics Hospital | Abhay Jeevan Hospital"
+        />
+
+        <meta
+          name="twitter:description"
+          content="Expert gynecology, pregnancy care, maternity services, and women's healthcare in Jhunsi, Prayagraj."
+        />
+
+        <meta
+          name="twitter:image"
+          content="https://abhayjeevanhospital.com/og-image.jpg"
+        />
+
+        <link
+          rel="canonical"
+          href="https://abhayjeevanhospital.com/specialities/gynecology"
+        />
+      </Helmet>
     <section className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-6">
 

@@ -148,11 +148,11 @@ export default function Consultants() {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://yourdomain.com/consultants"
+          content="https://abhayjeevanhospital.com/consultants"
         />
         <meta
           property="og:image"
-          content="https://yourdomain.com/og-image.jpg"
+          content="https://abhayjeevanhospital.com/og-image.jpg"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -166,12 +166,12 @@ export default function Consultants() {
         />
         <meta
           name="twitter:image"
-          content="https://yourdomain.com/og-image.jpg"
+          content="https://abhayjeevanhospital.com/og-image.jpg"
         />
 
         <link
           rel="canonical"
-          href="https://yourdomain.com/consultants"
+          href="https://abhayjeevanhospital.com/consultants"
         />
       </Helmet>
 
