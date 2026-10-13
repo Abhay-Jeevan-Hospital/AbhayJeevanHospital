@@ -1,15 +1,12 @@
 import React from 'react'
+import { BrowserRouter, createBrowserRouter, RouterProvider } from 'react-router-dom'
+import './index.css'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { HelmetProvider } from "react-helmet-async";
-import './index.css'
 import App from './App.jsx'
-import { BrowserRouter, createBrowserRouter, RouterProvider } from 'react-router-dom'
-import BookAppointment from './Page/BookAppointment.jsx'
 import Home from './Component/Home.jsx'
-// import Gallery from './Page/Gallery.jsx'
 import About from './Page/About.jsx'
-import OurSpecialities from './Page/OurSpecialities.jsx'
 import Consultant from './Page/Consultant.jsx'
 import Contact from './Page/Contact.jsx'
 import Gynecology from './Page/Specialities/Gynecology.jsx'
@@ -21,7 +18,10 @@ import PlasticAndReconstructiveSurgery from './Page/Specialities/PlasticAndRecon
 import ContactForm from './Page/ContactForm.jsx'
 import AbhayJeevanGallery from './Page/AbhayJeevanGallery.jsx'
 import Urology from './Page/Specialities/Urology.jsx'
-// import { BrowserRouter } from 'react-router-dom'
+// import BookAppointment from './Page/BookAppointment.jsx'
+// import OurSpecialities from './Page/OurSpecialities.jsx'
+// import Gallery from './Page/Gallery.jsx'
+
 const router = createBrowserRouter([
   {
     path: '/',
