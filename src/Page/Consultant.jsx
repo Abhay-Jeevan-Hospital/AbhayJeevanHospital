@@ -119,7 +119,7 @@ export default function Consultants() {
     <>
       <Helmet>
         <title>
-          Our Consultants | Expert Doctors at Abhay Jeevan Hospital, Jhunsi Prayagraj
+          Senior Consultants at Abhay Jeevan Hospital, Jhunsi Prayagraj
         </title>
 
         <meta

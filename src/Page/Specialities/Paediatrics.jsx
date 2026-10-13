@@ -155,9 +155,9 @@ export default function Pediatrics() {
                         Child Healthcare
                     </span>
 
-                    <h2 className="text-4xl md:text-5xl font-bold text-[#0B1F3A] mt-6 leading-tight">
+                    <h1 className="text-4xl md:text-5xl font-bold text-[#0B1F3A] mt-6 leading-tight">
                         Pediatrics Department
-                    </h2>
+                    </h1>
 
                     <div className="w-24 h-1 bg-[#FCA311] mx-auto mt-5 rounded-full"></div>
 

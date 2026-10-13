@@ -81,8 +81,7 @@ export default function Gynecology() {
     <>
     <Helmet>
         <title>
-          Best Gynecology & Obstetrics Hospital in Jhunsi, Prayagraj | Abhay
-          Jeevan Hospital
+          Best Gynecology & Obstetrics Hospital in Jhunsi, Prayagraj | Abhay Jeevan Hospital
         </title>
 
         <meta
