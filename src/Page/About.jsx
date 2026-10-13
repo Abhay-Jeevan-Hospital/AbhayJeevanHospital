@@ -159,7 +159,7 @@ export default function About() {
     <>
       <Helmet>
         <title>
-          About Abhay Jeevan Hospital | Best Multispeciality Hospital in Jhunsi, Prayagraj
+          About Abhay Jeevan Hospital in Jhunsi, Prayagraj
         </title>
 
         <meta
