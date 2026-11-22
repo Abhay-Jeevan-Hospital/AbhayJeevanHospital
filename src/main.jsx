@@ -47,10 +47,10 @@ const router = createBrowserRouter([
         path: 'consultants',
         element: <Consultant />
       },
-      {
-        path: 'contact',
-        element: <Contact />
-      },
+      // {
+      //   path: 'contact',
+      //   element: <Contact />
+      // },
       {
         path: 'specialities/obstetrics-gynecology',
         element: <Gynecology />
