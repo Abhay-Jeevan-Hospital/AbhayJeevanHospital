@@ -82,9 +82,7 @@ export default function PlasticAndReconstructiveSurgery() {
   return (
     <>
      <Helmet>
-        <title>
-          Best Plastic Surgery Hospital in Jhunsi, Prayagraj | Abhay Jeevan Hospital
-        </title>
+        <title>Best Plastic Surgery Hospital in Jhunsi, Prayagraj | Abhay Jeevan Hospital</title>
 
         <meta
           name="description"

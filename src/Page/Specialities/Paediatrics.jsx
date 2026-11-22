@@ -82,9 +82,7 @@ export default function Pediatrics() {
     return (
         <>
          <Helmet>
-        <title>
-          Best Pediatrics Hospital in Jhunsi, Prayagraj | Abhay Jeevan Hospital
-        </title>
+        <title>Best Pediatrics Hospital in Jhunsi, Prayagraj | Abhay Jeevan Hospital</title>
 
         <meta
           name="description"

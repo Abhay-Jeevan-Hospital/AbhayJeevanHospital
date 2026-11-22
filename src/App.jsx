@@ -6,9 +6,9 @@ import Footer from './Component/Footer'
 import { Outlet } from 'react-router-dom'
 import WhatsAppButton from './Component/whatsappButton'
 import MobileActionBar from './Component/MobileActionBar'
-// import PreFooterCTA from './Component/PreFooterCTA'
 import HospitalPhotoBanner from './Component/HospitalPhotoBanner'
 import Breadcrumb from './Component/BreadCrumb'
+// import PreFooterCTA from './Component/PreFooterCTA'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -17,8 +17,6 @@ function App() {
     <>
       {/* <Home/> */}
       <NavigationBar />
-      {/* <Home/> */}
-      {/* <AbhayJeevanHospital/> */}
       <main id='main-content'>
         <WhatsAppButton />
         <Breadcrumb />

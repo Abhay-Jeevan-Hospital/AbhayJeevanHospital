@@ -82,9 +82,7 @@ export default function InfertilityDepartment() {
   return (
     <>
     <Helmet>
-        <title>
-          Infertility & IVF Treatment in Jhunsi, Prayagraj | Abhay Jeevan Hospital
-        </title>
+        <title>Infertility & IVF Treatment in Jhunsi, Prayagraj | Abhay Jeevan Hospital</title>
 
         <meta
           name="description"

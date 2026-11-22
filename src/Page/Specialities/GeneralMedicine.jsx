@@ -82,14 +82,11 @@ export default function GeneralMedicine() {
   return (
     <>
     <Helmet>
-        <title>
-          General Physician doctor in Abhay Jeevan Hospital
-        </title>
+        <title> General Physician doctor in Abhay Jeevan Hospital</title>
 
         <meta
           name="description"
-          content="Abhay Jeevan Hospital provides comprehensive general medicine services in Jhunsi, Prayagraj. Our experienced physicians diagnose and treat fever, diabetes, hypertension, thyroid disorders, infections, respiratory diseases, digestive disorders, and other acute and chronic medical conditions."
-        />
+          content="Abhay Jeevan Hospital provides comprehensive general medicine services in Jhunsi, Prayagraj. Our experienced physicians diagnose and treat fever, diabetes, hypertension, thyroid disorders, infections, respiratory diseases, digestive disorders, and other acute and chronic medical conditions."/>
 
         <meta
           name="keywords"

@@ -83,9 +83,7 @@ export default function Urology() {
   return (
     <>
      <Helmet>
-        <title>
-          Best Urology Hospital in Jhunsi, Prayagraj | Abhay Jeevan Hospital
-        </title>
+        <title>Best Urology Hospital in Jhunsi, Prayagraj | Abhay Jeevan Hospital</title>
 
         <meta
           name="description"
